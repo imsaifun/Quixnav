@@ -1,0 +1,80 @@
+[data-theme-version="dark"] {
+    
+    .quixnav {
+        box-shadow: none;
+        background-color: $dark-card;
+    
+        ul {
+            background-color: $dark-card;
+        }
+
+        .metismenu {
+            background-color: $dark-card;
+            
+            &>li {
+
+                color: $d-ctl;
+                
+                &:hover,
+                &:focus, 
+                &.active {
+                    &>a {
+                        background: $dark-card;
+                        color: $white;
+                    }
+
+                    span, i {
+                        color: $white;
+                        background: transparent;
+                        -webkit-text-fill-color: unset !important;
+                    }
+                }
+                a {
+                    &>i {
+                        color: $white;
+                    }
+                }
+
+                ul {
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+            .mega-menu{
+                ul.in {
+                    li {
+                        a {
+                            &:hover,
+                            &:focus,
+                            &.active  {
+                                
+                                color: $white;
+                                background-color: $d-bg;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            a {
+                color: $white;
+
+                &:hover,
+                &:focus,
+                &:active, 
+                &.active {
+                    @extend %gradient-5;
+                }
+            }
+            .has-arrow {
+                &:after {
+                    right: 2.5rem;
+                    top: 48%;
+                }
+            }
+        }
+    }
+    
+
+}

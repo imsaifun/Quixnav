@@ -1,2 +1,2 @@
 # Quixnav
-A whole navigation for admin dashboard
+A multipurpose navigation for admin dashboard

@@ -1,0 +1,10 @@
+[data-theme-version="dark"] {
+    .nav-header, 
+    .nav-control {
+        background-color: $dark-card;
+    }
+
+    .hamburger .toggle-icon {
+        color: $white;
+    }
+}

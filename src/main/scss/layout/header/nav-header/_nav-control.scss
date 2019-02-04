@@ -1,0 +1,206 @@
+[data-sidebar-style="mini"], [data-layout="horizontal"] {
+    .nav-control {
+        display: none;
+    }
+}
+
+[data-sidebar-style="overlay"] {
+    @include media-breakpoint-down(sm) {
+        .nav-header .logo-abbr {
+            display: block;
+        }
+    }
+}
+
+
+[data-header-position="fixed"] {
+    .nav-header {
+        position: fixed;
+        left: auto;
+    }
+ }
+
+ 
+.nav-header {
+    height: 5rem;
+    width: 17.1875rem;
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $color_pallate_1;
+    box-shadow: 0 1px 10px rgba($black, 0.15); 
+    transition: all .2s ease;
+    z-index: 999;
+
+    .logo-abbr {
+        display: none;
+    }
+
+    .logo-compact {
+        display: none;
+    }
+
+
+    @include custommq($min: 1200px, $max: 1350px) {
+        width: 14.375rem;
+    }
+
+    .brand-logo {
+        z-index: 999;
+        
+        a {
+            padding: 1.857rem 1.0625rem;
+            display: block;
+            text-align: center;
+
+            i {
+                font-size: 1.375rem;
+            }
+            b {
+                img {
+                    max-width: 1.5625rem;
+                }
+            }
+            span {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .brand-title {
+        display: inline-block;
+        height: 1.5625rem;
+        width: 10rem;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+
+        @at-root [data-theme-version="dark"] & {
+            background-position: 0 120%;
+        }
+    }
+}
+
+.nav-control {
+    cursor: pointer;
+    position: absolute;
+    right: -3.5rem;
+    text-align: center;
+    height: 93%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    background-color: $white;
+
+    @include media-breakpoint-down(sm) {
+        right: -3rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+        right: -2.5rem;
+    }
+    
+    .hamburger {
+        &.active {
+            z-index: -1;
+        }
+    }
+}
+
+
+////////////////////
+// Humbuger Icon
+////////////////////
+.hamburger {
+    display: inline-block;
+    right: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    width: 2.3125rem;
+    z-index: 999;
+
+    &.is-active {
+        left: 0;
+        z-index: 9;
+    }
+
+    .toggle-icon {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #494949;
+    }
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+@media (min-width:767px) {
+    [data-sidebar-style="compact"] {
+        
+        .nav-control {
+            display: none;
+        }
+
+        .nav-header {
+            width: 9.375rem;
+        }
+    }
+}
+
+[data-sidebar-style="full"][data-layout="vertical"] {
+    .menu-toggle {
+        
+        .brand-title {
+            display: none;
+        }
+
+        .nav-header {
+            .logo-abbr {
+                display: block;
+            }
+        }
+    }
+}
+
+[data-sidebar-style="full"][data-layout="horizontal"] {
+        
+    .brand-title {
+        display: none;
+    }
+
+    .nav-header {
+        .logo-abbr {
+            display: none;
+        }
+    }
+
+    .logo-compact {
+        display: block;
+    }
+}
+
+[data-sidebar-style="mini"] {
+    .nav-header {
+        .logo-abbr {
+            display: block;
+        }
+    }
+}
+
+[data-sidebar-style="compact"] {
+    .nav-header {
+        
+        .brand-title {
+            display: none;
+        }
+
+        .logo-compact {
+            display: block;
+        }
+    }
+}

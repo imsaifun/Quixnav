@@ -1,0 +1,34 @@
+html[dir="rtl"] {
+
+    //sidebar styles
+    [direction="rtl"] {
+        .quixnav {
+            text-align: right;
+
+            .metismenu {
+                li.active {
+
+                    &>.has-arrow {
+                        &:after {
+                            transform: rotate(45deg) translateY(-50%);
+                        }
+                    }
+
+                }
+
+                .has-arrow {
+                    &:after {
+                        left: 2.5rem;
+                        right: auto;
+                    }
+                }
+
+                .nav-badge {
+                    left: 4.5rem;
+                    right: auto;
+                }
+            }
+        }
+    }
+
+}

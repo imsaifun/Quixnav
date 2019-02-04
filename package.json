@@ -1,0 +1,38 @@
+{
+  "name": "Quixnav",
+  "version": "1.0.0",
+  "description": "A whole navigation for admin dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass --watch src/main/scss/main.scss src/main/css/style.css --source-map src/main/css/style.css.map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quixlab/Quixnav.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quixlab/Quixnav/issues"
+  },
+  "homepage": "https://github.com/quixlab/Quixnav#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.4",
+    "csso": "^3.5.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-header-comment": "^0.4.0",
+    "gulp-javascript-obfuscator": "^1.1.5",
+    "node-sass": "^4.11.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "bootstrap": "^4.2.1",
+    "bootstrap-v4-rtl": "^4.1.1-1",
+    "jquery": "^3.3.1",
+    "jquery-slimscroll": "^1.3.8",
+    "metismenu": "^3.0.3"
+  }
+}
