@@ -6,7 +6,7 @@
     [data-sidebar-style="compact"] {
 
         .quixnav {
-            width: 9.375rem;
+            // width: 9.375rem;
         
             .metismenu {
                 li {
@@ -22,12 +22,15 @@
             display: block;
             margin-top: 0.3125rem;
         }
+
         .nav-badge {
             display: none;
         }
+
         .footer {
             padding-left: 9.375rem;
         }
+
         .content-body {
             margin-left: 9.375rem;
         }

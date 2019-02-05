@@ -139,6 +139,9 @@ quixSettings.prototype.manageSidebarStyle = function() {
         case "compact":
             body.attr("data-sidebar-style", "compact");
             break;
+        case "modern":
+            body.attr("data-sidebar-style", "modern");
+            break;
         case "overlay":
             this.layout === "horizontal" ? body.attr("data-sidebar-style", "full") : body.attr("data-sidebar-style", "overlay");
             break;
@@ -187,7 +190,7 @@ quixSettings.prototype.manageSidebarBg = function() {
 quixSettings.prototype.manageSidebarPosition = function() {
     switch(this.sidebarPosition) {
         case "fixed": 
-            this.sidebarStyle === "overlay" && this.layout === "vertical" ? body.attr("data-sidebar-position", "static") : body.attr("data-sidebar-position", "fixed");
+            this.sidebarStyle === "overlay" && this.layout === "vertical" || this.sidebarStyle === "modern" ? body.attr("data-sidebar-position", "static") : body.attr("data-sidebar-position", "fixed");
             break;
         case "static": 
             body.attr("data-sidebar-position", "static");

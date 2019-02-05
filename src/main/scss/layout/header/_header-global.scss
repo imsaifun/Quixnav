@@ -20,6 +20,10 @@
         padding-left: 4.375rem;
         align-items: center;
         display: flex;
+
+        @include custommq($max: 575px) {
+            padding-left: 2.375rem;
+        }
     }
 
     .navbar {
@@ -43,13 +47,6 @@
             display: none;
         }
     }
-    // .header-content {
-    //     margin-left: 3.75rem;
-
-    //     @at-root [direction="rtl"] #{&} {
-    //         margin-left: 0;
-    //     }
-    // }
 }
 
 
@@ -80,6 +77,13 @@
  }
 
  [data-sidebar-style="compact"] {
+     .header {
+         width: 100%;
+         padding-left: 9.375rem;
+     }
+ }
+
+ [data-sidebar-style="modern"] {
      .header {
          width: 100%;
          padding-left: 9.375rem;

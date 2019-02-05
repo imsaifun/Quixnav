@@ -65,10 +65,19 @@
             <div class="header-content">
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
-                        <form class="form-inline header-left">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-primary" type="submit">Search</button>
-                        </form>
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon d-md-none p-3 c-pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0 animated zoomIn">
+                                    <form class="form-inline">
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-primary" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     
                         <ul class="navbar-nav header-right">
                             <li class="nav-item dropdown notification_dropdown">
@@ -76,7 +85,7 @@
                                     <i class="icon-bell"></i>
                                     <span class="badge badge-primary">3</span>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-right py-3 animated fadeInUp">
+                                <div class="dropdown-menu dropdown-menu-right py-3 animated zoomIn">
                                     <ul class="list-unstyled">
                                         <li class="media dropdown-item">
                                             <img class="mr-3" src="../../assets/images/avatar/8.jpg" alt="Quixlab">
@@ -120,9 +129,9 @@
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="../../assets/images/user/1.png" height="40" width="40" alt="avatar">
-                                    <span class="ml-2">John Doe </span>
+                                    <span class="ml-2 user_name">John Doe </span>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-right animated fadeInUp">
+                                <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                     <a href="#!" class="dropdown-item">
                                         <i class="icon-user mr-2"></i>
                                         <span>My profile</span>
@@ -196,18 +205,6 @@
                             <li><a href="./layout-fixed-nav.html">Fixed Sidebar</a></li>
                         </ul>
                     </li>
-                    
-                    <li class="nav-label">Ecommerce</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-handbag"></i><span class="nav-text">Ecommerce</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./ecommerce-dashboard.html">Home</a></li>
-                            <li><a href="./ecommerce-products.html">Products</a></li>
-                            <li><a href="./ecommerce-product-edit.html">Products Edit</a></li>
-                            <li><a href="./ecommerce-order.html">Order</a></li>
-                            <li><a href="./ecommerce-order-view.html">Order View</a></li>
-                            <li><a href="./page-invoice.html">Invoice</a></li>
-                        </ul>
-                    </li>
                     <li class="nav-label">Apps</li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-envelope"></i> <span class="nav-text">Email</span></a>
                         <ul aria-expanded="false">
@@ -262,21 +259,6 @@
                         </ul>
                     </li>
                     <li><a href="widget-basic.html" aria-expanded="false"><i class="icon-badge"></i><span class="nav-text">Widget</span></a></li>
-                    <li class="nav-label">Forms</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-settings"></i><span class="nav-text">Forms</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./form-elements.html">Form Elements</a></li>
-                            <li><a href="./form-wizard.html">Form Wizard</a></li>
-                            <li><a href="./form-editor.html">Editor</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-label">Table</li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-briefcase"></i><span class="nav-text">Table</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="./table-basic.html" aria-expanded="false">Basic Table</a></li>
-                            <li><a href="./table-datatable.html" aria-expanded="false">Data Table</a></li>
-                        </ul>
-                    </li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-globe"></i><span class="nav-text">Pages</span></a>
                         <ul aria-expanded="false">
                             <li><a href="./page-pricing-table.html">Pricing</a></li>
@@ -400,6 +382,7 @@
                                     <option value="full">Full</option>
                                     <option value="mini">Mini</option>
                                     <option value="compact">Compact</option>
+                                    <option value="modern">Modern</option>
                                     <option value="overlay">Overlay</option>
                                 </select>
                             </div>

@@ -69,6 +69,12 @@
             padding-right: 0;
             justify-content: center;
         }
+
+        @include media-breakpoint-down(sm) {
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: center;
+        }
     }
 
     .brand-title {
@@ -161,6 +167,20 @@
 
 [data-sidebar-style="compact"] {
     .nav-header {
+        
+        .brand-title {
+            display: none;
+        }
+
+        .logo-compact {
+            display: block;
+        }
+    }
+}
+
+[data-sidebar-style="modern"][data-layout="vertical"] {
+    .nav-header {
+        width: 9.375rem;
         
         .brand-title {
             display: none;

@@ -14,6 +14,8 @@
     });
 
     sidebarPositionSelect.on('change', function() {
+        this.value === "fixed" && $('body').attr('data-sidebar-style') === "modern" && $('body').attr('data-layout') === "vertical" ? 
+        alert("Sorry, Modern sidebar layout dosen't support fixed position!") :
         $('body').attr('data-sidebar-position', this.value);
     });
 
@@ -67,6 +69,11 @@
         if($('body').attr('data-layout') === "vertical") {
             if($('body').attr('data-container') === "boxed" && this.value === "full") {
                 alert("Sorry! Full menu is not available in Vertical Boxed layout.");
+                return;
+            }
+
+            if(this.value === "modern" && $('body').attr('data-sidebar-position') === "fixed") {
+                alert("Sorry! Modern sidebar layout is not available in the fixed position. Please change the sidebar position into Static.");
                 return;
             }
         }

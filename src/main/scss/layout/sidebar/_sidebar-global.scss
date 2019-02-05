@@ -150,7 +150,7 @@
             &.mm-active {
 
                 &>a {
-                    background-color: lighten($color: $primary, $amount: 30%);
+                    background-color: lighten($color: $primary, $amount: 50%);
                     color: $primary;
 
                     &::after {

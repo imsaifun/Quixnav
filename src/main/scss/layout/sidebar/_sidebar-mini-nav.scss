@@ -1,7 +1,7 @@
 @import "../../abstracts/_mixin";
 @import "../../abstracts/_variable";
 
-@include custommq($min: 768px) {
+@include media-breakpoint-up(md) {
 
     [data-sidebar-style="mini"] {
         
@@ -108,7 +108,7 @@
 
                 &>li {
 
-                    &:nth-last-child(-n + 3) {
+                    &:nth-last-child(-n + 1) {
                         &>ul {
                             bottom: 2.93rem;
                             top: auto;
@@ -116,7 +116,7 @@
                     }
 
                     @include media-breakpoint-down(lg) {
-                        &:nth-last-child(-n + 6) {
+                        &:nth-last-child(-n + 1) {
                             &>ul {
                                 bottom: 2.93rem;
                                 top: auto;
@@ -175,4 +175,25 @@
         }
     }
 
+}
+
+@include media-breakpoint-down(lg) {
+    [data-sidebar-style="mini"] {
+        .quixnav {
+
+            li {
+                &.mm-active {
+                    ul {
+                        height: auto !important;
+                    }
+                }
+
+                a.has-arrow {
+                    &::after {
+                        transform: rotate(-45deg) translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
 }

@@ -104,7 +104,7 @@
 
                     &:hover {
 
-                        &:nth-last-child(-n + 3) {
+                        &:nth-last-child(-n + 1) {
                             &>ul {
                                 bottom: 2.9375rem;
                                 top: auto;

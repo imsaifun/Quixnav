@@ -220,14 +220,6 @@
                     }
 
                 }
-                
-                // &>li:last-child {
-
-                //     .has-arrow:after {
-                //         transform: rotate(-45deg) translateY(-50%);
-                //     }
-
-                // }
             }
         }
 
@@ -292,17 +284,21 @@
         
         .quixnav {
             .metismenu {
-                li {
+
+                &>li {
                     &>ul {
                         top: 4.5625rem;
                     }
-                }
-
-                &>li {
                     &>a {
+                        padding: 0.8125rem 2.1rem;
+
                         &::after {
                             display: none;
                         }
+                    }
+
+                    li {
+                        text-align: left;
                     }
                 }
             }
