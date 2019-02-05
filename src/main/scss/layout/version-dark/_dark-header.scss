@@ -4,47 +4,38 @@
         background-color: $dark-card;
     }
 
+    .header-left {
+        input {
+            border-color: $d-border;
+            color: $white;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $primary;
+            }
+
+            &::placeholder {
+                color: $white;
+            }
+        }
+    }
+
     .header-right {
-        // .icons > a {
-        //     color: $d-ctl;
-
-        //     i {
-        //         color: $d-ctl;
-        //     }
-        // }
-
-        &>ul {
-            &>li {
-                &>a, &>a i {
+        .dropdown {
+            .nav-link {
+                &:hover {
                     color: $white;
                 }
             }
         }
 
-        .notify-close {
-            color: $white;
-        }
-        
-        .dropdown-content-body {
-            ul > li {
-                background-color: $dark-card;
-
+        .notification_dropdown {
+            .dropdown-item {
                 a {
-                    color: $d-ctl;
+                    color: $white;
                 }
             }
         }
-
-        .notification-heading {
-            color: $white;
-        }
-    }
-
-    .header-left {
-        .input-group-text {
-            color: $white;
-        }
-        
     }
 
 }

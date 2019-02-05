@@ -42,30 +42,6 @@ $l-border: rgba(120, 130, 140, 0.13);
 $l-bg: #F7FAFC;
 $heading: #333;
 
-/////////////
-// Social
-/////////////
-$facebook: #3b5998;
-$twitter: #1da1f2;
-$youtube: #FF0000;
-$google-plus: #db4439;
-$iron: #DDDFE1;
-$linkedin: #007bb6;
-$instagram: #c32aa3;
-$pinterest: #bd081c;
-$google: #4285f4;
-$snapchat: #fffc00;
-$whatsapp: #25d366;
-$tumblr: #35465d;
-$reddit: #ff4500;
-$spotify: #1ed760;
-$yahoo: #430297;
-$dribbble: #ea4c89;
-$skype: #00aff0;
-$quora: #aa2200;
-$riverBed: #4C585C;
-$vimeo: #1ab7ea;
-
 ///////////////////
 // Material Color
 ///////////////////
@@ -76,7 +52,7 @@ $gray: #898989;
 
 
 //color for coller pallate
-$color_pallate_1: #2E3442;
+$color_pallate_1: $white;
 $color_pallate_2: #30323F;
 $color_pallate_3: #6a1b9a;
 $color_pallate_4: #4527a0;
@@ -86,5 +62,3 @@ $color_pallate_7: #1565c0;
 $color_pallate_8: #0277bd;
 $color_pallate_9: #00838f;
 $color_pallate_10: #558b2f;
-
-

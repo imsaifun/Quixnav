@@ -1,80 +1,67 @@
 [data-theme-version="dark"] {
     
     .quixnav {
-        box-shadow: none;
         background-color: $dark-card;
     
-        ul {
-            background-color: $dark-card;
-        }
-
         .metismenu {
-            background-color: $dark-card;
-            
+    
+    
             &>li {
-
-                color: $d-ctl;
-                
-                &:hover,
+    
+                &>a {
+                    color: darken($color: $white, $amount: 30%);
+                }
+    
+                &:hover, 
                 &:focus, 
-                &.active {
+                &.mm-active {
+    
                     &>a {
-                        background: $dark-card;
+                        background-color: $black;
                         color: $white;
-                    }
-
-                    span, i {
-                        color: $white;
-                        background: transparent;
-                        -webkit-text-fill-color: unset !important;
+    
+                        &::after {
+                            border-color: transparent transparent $white transparent;
+                        }
                     }
                 }
-                a {
-                    &>i {
-                        color: $white;
-                    }
-                }
-
-                ul {
-                    a {
-                        color: $white;
-                    }
-                }
-            }
-            .mega-menu{
-                ul.in {
-                    li {
-                        a {
-                            &:hover,
-                            &:focus,
-                            &.active  {
-                                
-                                color: $white;
-                                background-color: $d-bg;
-                                
-                            }
+    
+                &.mm-active {
+                    ul {
+    
+                        ul {
+                            background-color: transparent;
                         }
                     }
                 }
             }
-            a {
-                color: $white;
-
-                &:hover,
-                &:focus,
-                &:active, 
-                &.active {
-                    @extend %gradient-5;
+    
+            //one step dropdown
+            ul  {
+                background-color: $d-bg;
+    
+                a {
+    
+                    &:hover,
+                    &:focus, 
+                    &.mm-active {
+                        color: $white;
+                    } 
                 }
             }
+            
+            a {
+                color: darken($color: $white, $amount: 30%);
+            }
+    
             .has-arrow {
                 &:after {
-                    right: 2.5rem;
-                    top: 48%;
+                    border-color: transparent transparent darken($color: $white, $amount: 30%) transparent;
                 }
             }
         }
     }
+    
     
 
 }

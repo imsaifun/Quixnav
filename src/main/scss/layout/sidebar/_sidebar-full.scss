@@ -7,17 +7,14 @@
 
         .nav-header {
             width: 3.75rem;
+            z-index: 999;
+
             .brand-logo {
-                z-index: 999;
-                a {
-                    padding: 1.607rem 1.0625rem;
-                    b {
-                        img {
-                            margin-top: 0.4375rem;
-                        }
-                    }
-                }
+                padding-left: 0;
+                padding-right: 0;
+                justify-content: center;
             }
+
             .nav-control {
                 // z-index: -1;
                 .hamburger{
@@ -37,23 +34,6 @@
                 padding: 0 0.9375rem;
                 padding-right: 3.75rem;
             }
-
-            .header-left {
-                margin-left: 3.125rem;
-
-                @at-root [direction="rtl"]#{&} {
-                    margin-right: 3.125rem;
-                    margin-left: auto;
-                }
-
-                .drop-down {
-                    top: 0.3125rem;
-                }
-            }
-    
-            .header-content {
-                margin-left: 0;
-            }
         }
 
         .quixnav {
@@ -71,9 +51,11 @@
             .metismenu {
                 li {
                     position: relative;
+
                     a {
                         padding: 0.8125rem 0.9375rem;
                     }
+
                     &>ul {
                         position: absolute;
                         left: 3.75rem;
@@ -82,6 +64,11 @@
                         z-index: 1001;
                         display: none;
                         padding-left: 1px;
+                        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+                        
+                        @at-root [data-theme-version="dark"]#{&} {
+                            box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+                        }
 
                         @at-root [direction="rtl"]#{&} {
                             left: auto;
@@ -90,11 +77,17 @@
 
                         li:hover {
                             ul {
-                                display: block;
+                                // display: block;
                                 left: 11.8125rem;
                                 top: 0;
                             }
                         }
+                    }
+
+                    &:hover>ul {
+                        display: block;
+                        height: auto;
+                        overflow: visible;
                     }
                 }
                 &>li {
@@ -105,109 +98,6 @@
                         &.has-arrow {
                             &:after {
                                 display: none;
-                            }
-                        }
-                    }
-
-                    &.mega-menu {
-
-                        &> ul.collapse:not(.in) {
-                            height: 252px !important;
-                        }
-
-                        &:hover {
-                            &>a {
-                                width: calc(70vw + 3.75rem);
-                            }
-
-                            &>ul {
-                                display: flex;
-                                flex-wrap: wrap;
-                                flex-direction: column;
-                                max-height: 13.75rem;
-                                width: 70vw;
-
-                                ul a {
-                                    width: 101%;
-                                }
-                            }
-                        }
-
-                        &-xl {
-                            &:hover {
-                                &>a {
-                                    width: calc(70vw + 3.75rem);
-                                }
-                                &>ul {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    flex-direction: column;
-                                    max-height:21.875rem;
-                                    width: 70vw;
-    
-                                    ul a {
-                                        width: 101%;
-                                    }
-                                }
-                            }
-                        }
-
-                        &-lg {
-
-                            &:hover {
-                                &>a {
-                                    width: calc(55vw + 3.75rem);
-                                }
-
-                                &>ul {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    flex-direction: column;
-                                    max-height:18.125rem;
-                                    width: 55vw;
-    
-                                    ul a {
-                                        width: 101%;
-                                    }
-                                }
-                            }
-                        }
-
-                        &-md {
-                            &:hover {
-                                &>a {
-                                    width: calc(45vw + 3.75rem);
-                                }
-                                &>ul {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    flex-direction: column;
-                                    max-height: 18.75rem;
-                                    width: 45vw;
-    
-                                    ul a {
-                                        width: 101%;
-                                    }
-                                }
-                            }
-                        }
-
-                        &-sm {
-                            &:hover {
-                                &>a {
-                                    width: calc(22vw + 3.75rem);
-                                }
-                                &>ul {
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    flex-direction: column;
-                                    max-height: 18.125rem;
-                                    width: 22vw;
-    
-                                    ul a {
-                                        width: 101%;
-                                    }
-                                }
                             }
                         }
                     }
@@ -236,9 +126,8 @@
                             }
                         }
                         &>ul {
-                            display: block;
-                            height: auto;
-                            overflow: visible;
+                            height: auto !important;
+                            
                             a {
                                 padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
                                 margin-left: -.1rem;

@@ -1,4 +1,4 @@
-html[dir="rtl"] {
+// html[dir="rtl"] {
 
     //nav header styles
     [direction="rtl"] {
@@ -21,29 +21,20 @@ html[dir="rtl"] {
             text-align: right;
             right: auto;
 
-            .nav-control {
-                right: auto;
-                left: -3.5rem;
+            .brand-logo {
+                padding-left: 0;
+                padding-right: 2.5rem;
 
-                .hamburger {
-
-                    &.is-active {
-                        left: auto;
-
-                        .line:nth-child(1) {
-                            transform: translateY(0.4rem) rotate(135deg);
-                        }
-
-                        .line:nth-child(2) {
-                            transform: translateX(0.4rem);
-                        }
-
-                        .line:nth-child(3) {
-                            transform: translateY(-0.4rem) rotate(-135deg);
-                        }
-                    }
+                @at-root [data-sidebar-style="compact"]#{&}, 
+                [data-sidebar-style="mini"]#{&} {
+                    padding-right: 0;
                 }
             }
+        }
+
+        .nav-control {
+            right: auto;
+            left: -3.5rem;
         }
 
         &[data-sidebar-style="overlay"] {
@@ -67,4 +58,4 @@ html[dir="rtl"] {
 
     }
 
-}
+// }

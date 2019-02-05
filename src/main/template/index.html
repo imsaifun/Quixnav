@@ -40,17 +40,13 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <div class="brand-logo">
-                <!-- <a href="index.html">
-                    <b class="logo-abbr"><img src="../../assets/images/logo.png" alt=""> </b>
-                    <span class="logo-compact"><img src="./../../assets/images/logo-compact.png" alt=""></span>
-                    <span class="brand-title"></span>
-                </a> -->
-                <a href="index.html">
-                    <b class="logo-abbr">Q</b>
-                    <span class="brand-title"><b>QuixNav</b></span>
+            <!-- <div> -->
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-abbr">Q</span>
+                    <span class="logo-compact">QuixNav</span>
+                    <span class="brand-title">QuixNav</span>
                 </a>
-            </div>
+            <!-- </div> -->
 
             <div class="nav-control wave-effect wave-effect-x">
                 <div class="hamburger">
@@ -65,384 +61,95 @@
         <!--**********************************
             Header start
         ***********************************-->
-        <div class="header">    
-            <div class="header-content clearfix">
-                <div class="header-left">
-                    <div class="input-group position-static">
-                        <div class="input-group-prepend" data-display="static" data-toggle="dropdown">
-                            <span class="input-group-text bg-transparent border-0" id="basic-addon1">
-                                <i class="icon-magnifier"></i>
-                            </span>
-                        </div>
-                        <input type="search" class="border-0" placeholder="Search Dashboard" aria-label="Search Dashboard">
-                        <div class="dropdown-menu animated zoomIn d-md-none">
-                            <form action="#">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </form>
-                        </div>
+        <div class="header"> 
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <form class="form-inline header-left">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-bell"></i>
+                                    <span class="badge badge-primary">3</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right py-3 animated fadeInUp">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <img class="mr-3" src="../../assets/images/avatar/8.jpg" alt="Quixlab">
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h5>Lisa Heiden</h5>
+                                                        <span>10 min ago</span>
+                                                    </div>
+                                                    <p class="m-0">commented on your photo</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <img class="mr-3" src="../../assets/images/avatar/1.jpg" alt="Quixlab">
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h5>Lisa Heiden</h5>
+                                                        <span>10 min ago</span>
+                                                    </div>
+                                                    <p class="m-0">commented on your photo</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <img class="mr-3" src="../../assets/images/avatar/2.jpg" alt="Quixlab">
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h5>Lisa Heiden</h5>
+                                                        <span>10 min ago</span>
+                                                    </div>
+                                                    <p class="m-0">commented on your photo</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../../assets/images/user/1.png" height="40" width="40" alt="avatar">
+                                    <span class="ml-2">John Doe </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right animated fadeInUp">
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="icon-user mr-2"></i>
+                                        <span>My profile</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="icon-calender mr-2"></i>
+                                        <span>Calender</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="icon-settings mr-2"></i>
+                                        <span>Inbox</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="icon-envelope mr-2"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="icon-power mr-2"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="header-right">
-
-                    <ul class="clearfix">
-                        <li class="d-none d-md-flex">
-                            <a href="#" class="window_fullscreen wave-effect wave-effect-x">
-                                <i class="icon-frame"></i>
-                            </a>
-                        </li>
-                        <li class="position-static d-none d-md-flex dropdown">
-                            <a href="#" class="wave-effect wave-effect-x" data-display="static" data-toggle="dropdown">Mega</a>
-                            <div class="dropdown-menu animated fadeInDown dropdown-mega-menu">
-                                <div class="megamenu-wrapper row">
-                                    <div class="col-lg-4 col-md-12 px-lg-5 px-md-0">
-                                        <h5 class="heading">Basic UI Elements</h5>
-                                        <div class="row border-right-lg">
-                                            <div class="col-md-6">
-                                                <ul class="d-md-flex d-lg-block flex-direction-column">
-                                                    <li>
-                                                        <a href="#">Tabs</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tables</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Accordions</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Toggles</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Buttons</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tabs</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tables</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Tags Input</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Data Table</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Foo Table</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">JS Grid Table</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Switch</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Color</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tables</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="ext-link mt-lg-4 mt-md-2 mb-md-3 mb-lg-0 link-1">
-                                            <a href="#" class="gradient-1 gradient-1-hover">Demo 01</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12 px-lg-5 px-md-0">
-                                        <h5 class="heading">Basic UI Elements</h5>
-                                        <div class="row border-right-lg">
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Bootstrap Select</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Multiselect</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Context Menu</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Toggles</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Touchspinner</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Maxlength</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">File Input</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Date Picker</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Color Picker</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Vector Map</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Google Map</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Typeahead</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tabs</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Multiselect</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="ext-link mt-lg-4 mt-md-2 mb-md-3 mb-lg-0 link-2">
-                                            <a href="#" class="gradient-3 gradient-3-hover">Demo 02</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12 px-lg-5 px-md-0">
-                                        <h5 class="heading">Basic UI Elements</h5>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Blog</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Portfolio</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tab</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">AM Chart</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Morris Chart</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">ChartJS</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Sparkline Chart</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Markdown Editor</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Text Editor</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Date Picker</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Form Wizard</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Step Form</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Pricing</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Search</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="ext-link mt-lg-4 mt-md-2 mb-md-3 mb-lg-0 link-3">
-                                            <a href="#" class="gradient-1 gradient-1-hover">Demo 03</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" data-display="static" data-toggle="dropdown" class="wave-effect wave-effect-x">
-                                <i class="icon-envelope"></i>
-                                <span class="badge gradient-1 badge-pill badge-primary">3</span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right animated fadeInDown  dropdown-messaegs">
-                                <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">Messages</span>  
-                                    <a href="javascript:void()" class="d-inline-block">
-                                        <span class="badge gradient-1 badge-pill badge-primary">3</span>
-                                    </a>
-                                </div>
-                                <div class="dropdown-content-body">
-                                    <ul>
-                                        <li class="notification-unread">
-                                            <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="../../assets/images/avatar/1.jpg" alt="">
-                                                <div class="notification-content">
-                                                    <div class="notification-heading">Adam Smith</div>
-                                                    <div class="notification-timestamp">08 Hours ago</div>
-                                                    <div class="notification-text">Hey, What's up!</div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="notification-unread">
-                                            <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="../../assets/images/avatar/2.jpg" alt="">
-                                                <div class="notification-content">
-                                                    <div class="notification-heading">Fabric Brightner</div>
-                                                    <div class="notification-timestamp">08 Hours ago</div>
-                                                    <div class="notification-text">Can you do me a favour?</div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="../../assets/images/avatar/3.jpg" alt="">
-                                                <div class="notification-content">
-                                                    <div class="notification-heading">Alister Camel</div>
-                                                    <div class="notification-timestamp">08 Hours ago</div>
-                                                    <div class="notification-text">Hey!</div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <img class="float-left mr-3 avatar-img" src="../../assets/images/avatar/4.jpg" alt="">
-                                                <div class="notification-content">
-                                                    <div class="notification-heading">Bodrum Salvador</div>
-                                                    <div class="notification-timestamp">08 Hours ago</div>
-                                                    <div class="notification-text">And what do you do?</div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a class="d-flex justify-content-between gradient-5 px-4 text-white" href="javascript:void()">
-                                        <span>See all messages</span>
-                                        <span><i class="icon-settings"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="wave-effect wave-effect-x" data-display="static" data-toggle="dropdown">
-                                <i class="icon-bell"></i>
-                                <span class="badge badge-pill gradient-2 badge-primary">3</span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right animated fadeInDown dropdown-notfication">
-                                <div class="dropdown-content-heading d-flex justify-content-between">
-                                    <span class="">Notifications</span>  
-                                    <a href="javascript:void()" class="d-inline-block">
-                                        <span class="badge gradient-2 badge-pill badge-primary">5</span>
-                                    </a>
-                                </div>
-                                <div class="dropdown-content-body">
-                                    <ul>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-calender"></i></span>
-                                                <div class="notification-content">
-                                                    <h6 class="notification-heading">Event Started</h6>
-                                                    <span class="notification-text">One hour ago</span> 
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-calender"></i></span>
-                                                <div class="notification-content">
-                                                    <h6 class="notification-heading">Event Started</h6>
-                                                    <span class="notification-text">One hour ago</span> 
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-calender"></i></span>
-                                                <div class="notification-content">
-                                                    <h6 class="notification-heading">Event Started</h6>
-                                                    <span class="notification-text">One hour ago</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void()">
-                                                <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-calender"></i></span>
-                                                <div class="notification-content">
-                                                    <h6 class="notification-heading">Event Started</h6>
-                                                    <span class="notification-text">One hour ago</span> 
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a class="d-flex justify-content-between gradient-7 px-4 text-white" href="javascript:void()">
-                                        <span>All Notifications</span>
-                                        <span><i class="icon-settings"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="d-none d-md-flex dropdown">
-                            <a href="#" class="log-user wave-effect wave-effect-x" data-display="static" data-toggle="dropdown">
-                                <span>English</span>  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-language animated fadeInDown">
-                                <div class="dropdown-content-body">
-                                    <ul>
-                                        <li><a href="javascript:void()">English</a>
-                                        </li>
-                                        <li><a href="javascript:void()">Spanish</a>
-                                        </li>
-                                        <li><a href="javascript:void()">Portuguise</a>
-                                        </li>
-                                        <li><a href="javascript:void()">Arabic</a>
-                                        </li>
-                                        <li><a href="javascript:void()">Bengali</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <div class="user-img c-pointer wave-effect wave-effect-x" data-display="static" data-toggle="dropdown">
-                                <span class="activity active"></span>
-                                <img src="../../assets/images/user/1.png" height="40" width="40" alt="">
-                            </div>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-profile animated fadeInDown">
-                                <div class="dropdown-content-body">
-                                    <ul>
-                                        <li><a href="javascript:void()"><i class="icon-user"></i> <span>My Profile</span></a>
-                                        </li>
-                                        <li><a href="javascript:void()"><i class="icon-calender"></i> <span>My Calender</span></a>
-                                        </li>
-                                        <li><a href="javascript:void()"><i class="icon-envelope-open"></i> <span>My Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
-                                        </li>
-                                        <li><a href="javascript:void()"><i class="icon-paper-plane"></i> <span>My Tasks</span><div class="badge badge-pill bg-dark">3</div></a>
-                                        </li>
-                                        <hr class="my-2">
-                                        <li><a href="javascript:void()"><i class="icon-check"></i> <span>Online</span></a>
-                                        </li>
-                                        <li><a href="javascript:void()"><i class="icon-lock"></i> <span>Lock Screen</span></a>
-                                        </li>
-                                        <li><a href="javascript:void()"><i class="icon-key"></i> <span>Logout</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                </nav>
             </div>
-        </div>
+            </div>
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
@@ -468,7 +175,7 @@
                             <li><a href="./index-7.html">Home 7</a></li>
                         </ul>
                     </li>
-                    <li class="mega-menu mega-menu-sm"><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-layers"></i><span class="nav-text">Layouts</span></a>
+                    <li class="mega-menu mega-menu-md"><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-layers"></i><span class="nav-text">Layouts</span></a>
                         <ul aria-expanded="false">
                             <li><a href="./layout-blank.html">Blank</a></li>
                             <li><a href="./layout-one-column.html">One Column</a></li>
@@ -544,7 +251,7 @@
                             <li><a href="./ui-switches.html">Switch</a></li>
                         </ul>
                     </li>
-                    <li class="mega-menu mega-menu-md"><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-puzzle"></i><span class="nav-text">Components</span></a>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-puzzle"></i><span class="nav-text">Components</span></a>
                         <ul aria-expanded="false">
                             <li><a href="./uc-bootstrap-select.html">Bootstrap select</a></li>
                             <li><a href="./uc-colorpicker.html">Color Picker</a></li>
@@ -552,12 +259,6 @@
                             <li><a href="./uc-datepicker.html">Date Picker</a></li>
                             <li><a href="./uc-file-input.html">File Input</a></li>
                             <li><a href="./uc-jq-multiselect.html">Multiselect</a></li>
-                            <li><a href="./uc-maxlength.html">Maxlenghh</a></li>
-                            <li><a href="./uc-tag-input.html">Tag Input</a></li>
-                            <li><a href="./uc-touchspiner.html">Touchspinner</a></li>
-                            <li><a href="./uc-typehead.html">Typeahead</a></li>
-                            <li><a href="./map-vector-map.html">Vector Map</a></li>
-                            <li><a href="./map-google-map.html">Google Map</a></li>
                         </ul>
                     </li>
                     <li><a href="widget-basic.html" aria-expanded="false"><i class="icon-badge"></i><span class="nav-text">Widget</span></a></li>
@@ -664,16 +365,16 @@
         ***********************************-->
         <div class="sidebar-right">
             <a class="sidebar-right-trigger gradient-5 wave-effect wave-effect-x" href="javascript:void(0)">
-                <span><i class="icon-speech"></i></span>
+                <span><i class="fa fa-cog fa-spin"></i></span>
             </a>
             <div class="sidebar-right-inner">
-                <ul class="nav nav-tabs" role="tablist">
+                <!-- <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active show" data-toggle="tab" href="#home8">
                             <span><i class="icon-settings" aria-hidden="true"></i></span>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
 
                 <div class="tab-content tab-content-default tabcontent-border">
                     <div class="tab-pane fade active show" id="home8" role="tabpanel">
@@ -735,44 +436,44 @@
                                 <p>Navigation Header</p>
                                 <div>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_1" class="filled-in chk-col-primary" id="nav_header_bg_1">
-                                        <label for="nav_header_bg_1"></label>
+                                        <input type="radio" name="navigation_header" value="color_1" class="filled-in chk-col-primary" id="nav_header_color_1">
+                                        <label for="nav_header_color_1"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_2" class="filled-in chk-col-primary" id="nav_header_bg_2">
-                                        <label for="nav_header_bg_2"></label>
+                                        <input type="radio" name="navigation_header" value="color_2" class="filled-in chk-col-primary" id="nav_header_color_2">
+                                        <label for="nav_header_color_2"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_3" class="filled-in chk-col-primary" id="nav_header_bg_3">
-                                        <label for="nav_header_bg_3"></label>
+                                        <input type="radio" name="navigation_header" value="color_3" class="filled-in chk-col-primary" id="nav_header_color_3">
+                                        <label for="nav_header_color_3"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_4" class="filled-in chk-col-primary" id="nav_header_bg_4">
-                                        <label for="nav_header_bg_4"></label>
+                                        <input type="radio" name="navigation_header" value="color_4" class="filled-in chk-col-primary" id="nav_header_color_4">
+                                        <label for="nav_header_color_4"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_5" class="filled-in chk-col-primary" id="nav_header_bg_5">
-                                        <label for="nav_header_bg_5"></label>
+                                        <input type="radio" name="navigation_header" value="color_5" class="filled-in chk-col-primary" id="nav_header_color_5">
+                                        <label for="nav_header_color_5"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_6" class="filled-in chk-col-primary" id="nav_header_bg_6">
-                                        <label for="nav_header_bg_6"></label>
+                                        <input type="radio" name="navigation_header" value="color_6" class="filled-in chk-col-primary" id="nav_header_color_6">
+                                        <label for="nav_header_color_6"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_7" class="filled-in chk-col-primary" id="nav_header_bg_7">
-                                        <label for="nav_header_bg_7"></label>
+                                        <input type="radio" name="navigation_header" value="color_7" class="filled-in chk-col-primary" id="nav_header_color_7">
+                                        <label for="nav_header_color_7"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_8" class="filled-in chk-col-primary" id="nav_header_bg_8">
-                                        <label for="nav_header_bg_8"></label>
+                                        <input type="radio" name="navigation_header" value="color_8" class="filled-in chk-col-primary" id="nav_header_color_8">
+                                        <label for="nav_header_color_8"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_9" class="filled-in chk-col-primary" id="nav_header_bg_9">
-                                        <label for="nav_header_bg_9"></label>
+                                        <input type="radio" name="navigation_header" value="color_9" class="filled-in chk-col-primary" id="nav_header_color_9">
+                                        <label for="nav_header_color_9"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="navigation_header" value="color_10" class="filled-in chk-col-primary" id="nav_header_bg_10">
-                                        <label for="nav_header_bg_10"></label>
+                                        <input type="radio" name="navigation_header" value="color_10" class="filled-in chk-col-primary" id="nav_header_color_10">
+                                        <label for="nav_header_color_10"></label>
                                     </span>
                                 </div>
                             </div>
@@ -780,44 +481,44 @@
                                 <p>Header</p>
                                 <div>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_1" class="filled-in chk-col-primary" id="header_bg_1">
-                                        <label for="header_bg_1"></label>
+                                        <input type="radio" name="header_bg" value="color_1" class="filled-in chk-col-primary" id="header_color_1">
+                                        <label for="header_color_1"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_2" class="filled-in chk-col-primary" id="header_bg_2">
-                                        <label for="header_bg_2"></label>
+                                        <input type="radio" name="header_bg" value="color_2" class="filled-in chk-col-primary" id="header_color_2">
+                                        <label for="header_color_2"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_3" class="filled-in chk-col-primary" id="header_bg_3">
-                                        <label for="header_bg_3"></label>
+                                        <input type="radio" name="header_bg" value="color_3" class="filled-in chk-col-primary" id="header_color_3">
+                                        <label for="header_color_3"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_4" class="filled-in chk-col-primary" id="header_bg_4">
-                                        <label for="header_bg_4"></label>
+                                        <input type="radio" name="header_bg" value="color_4" class="filled-in chk-col-primary" id="header_color_4">
+                                        <label for="header_color_4"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_5" class="filled-in chk-col-primary" id="header_bg_5">
-                                        <label for="header_bg_5"></label>
+                                        <input type="radio" name="header_bg" value="color_5" class="filled-in chk-col-primary" id="header_color_5">
+                                        <label for="header_color_5"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_6" class="filled-in chk-col-primary" id="header_bg_6">
-                                        <label for="header_bg_6"></label>
+                                        <input type="radio" name="header_bg" value="color_6" class="filled-in chk-col-primary" id="header_color_6">
+                                        <label for="header_color_6"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_7" class="filled-in chk-col-primary" id="header_bg_7">
-                                        <label for="header_bg_7"></label>
+                                        <input type="radio" name="header_bg" value="color_7" class="filled-in chk-col-primary" id="header_color_7">
+                                        <label for="header_color_7"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_8" class="filled-in chk-col-primary" id="header_bg_8">
-                                        <label for="header_bg_8"></label>
+                                        <input type="radio" name="header_bg" value="color_8" class="filled-in chk-col-primary" id="header_color_8">
+                                        <label for="header_color_8"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_9" class="filled-in chk-col-primary" id="header_bg_9">
-                                        <label for="header_bg_9"></label>
+                                        <input type="radio" name="header_bg" value="color_9" class="filled-in chk-col-primary" id="header_color_9">
+                                        <label for="header_color_9"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="header_bg" value="color_10" class="filled-in chk-col-primary" id="header_bg_10">
-                                        <label for="header_bg_10"></label>
+                                        <input type="radio" name="header_bg" value="color_10" class="filled-in chk-col-primary" id="header_color_10">
+                                        <label for="header_color_10"></label>
                                     </span>
                                 </div>
                             </div>
@@ -825,44 +526,44 @@
                                 <p>Sidebar</p>
                                 <div>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_1" class="filled-in chk-col-primary" id="sidebar_bg_1">
-                                        <label for="sidebar_bg_1"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_1" class="filled-in chk-col-primary" id="sidebar_color_1">
+                                        <label for="sidebar_color_1"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_2" class="filled-in chk-col-primary" id="sidebar_bg_2">
-                                        <label for="sidebar_bg_2"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_2" class="filled-in chk-col-primary" id="sidebar_color_2">
+                                        <label for="sidebar_color_2"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_3" class="filled-in chk-col-primary" id="sidebar_bg_3">
-                                        <label for="sidebar_bg_3"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_3" class="filled-in chk-col-primary" id="sidebar_color_3">
+                                        <label for="sidebar_color_3"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_4" class="filled-in chk-col-primary" id="sidebar_bg_4">
-                                        <label for="sidebar_bg_4"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_4" class="filled-in chk-col-primary" id="sidebar_color_4">
+                                        <label for="sidebar_color_4"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_5" class="filled-in chk-col-primary" id="sidebar_bg_5">
-                                        <label for="sidebar_bg_5"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_5" class="filled-in chk-col-primary" id="sidebar_color_5">
+                                        <label for="sidebar_color_5"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_6" class="filled-in chk-col-primary" id="sidebar_bg_6">
-                                        <label for="sidebar_bg_6"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_6" class="filled-in chk-col-primary" id="sidebar_color_6">
+                                        <label for="sidebar_color_6"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_7" class="filled-in chk-col-primary" id="sidebar_bg_7">
-                                        <label for="sidebar_bg_7"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_7" class="filled-in chk-col-primary" id="sidebar_color_7">
+                                        <label for="sidebar_color_7"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_8" class="filled-in chk-col-primary" id="sidebar_bg_8">
-                                        <label for="sidebar_bg_8"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_8" class="filled-in chk-col-primary" id="sidebar_color_8">
+                                        <label for="sidebar_color_8"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_9" class="filled-in chk-col-primary" id="sidebar_bg_9">
-                                        <label for="sidebar_bg_9"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_9" class="filled-in chk-col-primary" id="sidebar_color_9">
+                                        <label for="sidebar_color_9"></label>
                                     </span>
                                     <span>
-                                        <input type="radio" name="sidebar_bg" value="color_10" class="filled-in chk-col-primary" id="sidebar_bg_10">
-                                        <label for="sidebar_bg_10"></label>
+                                        <input type="radio" name="sidebar_bg" value="color_10" class="filled-in chk-col-primary" id="sidebar_color_10">
+                                        <label for="sidebar_color_10"></label>
                                     </span>
                                 </div>
                             </div>

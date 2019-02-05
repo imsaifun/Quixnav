@@ -6,7 +6,7 @@ html[dir="rtl"] {
             padding-right: 17.1875rem;
             padding-left: 0;
 
-            @include respond(phone-land) {
+            @include media-breakpoint-down(sm) {
                 padding-right: 0;
             }
         }

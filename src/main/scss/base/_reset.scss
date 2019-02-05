@@ -60,3 +60,18 @@ li {
         }
     }
 }
+
+
+//change bootstrap default button behaviour on :focus:active 😢
+.btn {
+    &-primary {
+        &:not(:disabled):not(.disabled) {
+            &:active, 
+            &.active {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

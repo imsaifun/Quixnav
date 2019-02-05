@@ -100,7 +100,7 @@
     z-index: 99;
     background-color: $white;
     box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1);
-    transition: all .2s ease;
+    transition: left, width .2s ease-in-out;
 
 
 
@@ -117,7 +117,7 @@
     .metismenu {
         display: flex;
         flex-direction: column;
-        transition: all .4s ease-in-out;
+        // transition: all .3s ease-in-out;
 
         &.fixed {
             position: fixed;
@@ -130,11 +130,6 @@
         &>li {
             display: flex;
             flex-direction: column;
-            position: relative;
-
-            &.nav-label {
-                color: $black;
-            }
 
             a {
                 &>i {
@@ -147,7 +142,7 @@
             }
 
             &>a {
-                color: $red;
+                color: rgba($color: $black, $alpha: .8);
             }
 
             &:hover, 
@@ -155,14 +150,18 @@
             &.mm-active {
 
                 &>a {
-                    background-color: green;
-                    color: white;
+                    background-color: lighten($color: $primary, $amount: 30%);
+                    color: $primary;
+
+                    &::after {
+                        border-color: transparent transparent $primary transparent;
+                    }
                 }
             }
 
             &.mm-active {
                 ul {
-                    background-color: rgba($color: black, $alpha: .5);
+                    // background-color: rgba($color: black, $alpha: .5);
 
                     ul {
                         background-color: transparent;
@@ -171,14 +170,15 @@
             }
         }
 
-        // li {
-        //     &.mm-active {
-
-        //     }
-        // }
+        li {
+            position: relative;
+        }
 
         //one step dropdown
         ul  {
+            background-color: darken($color: $white, $amount: 2%);
+            transition: all .2s ease-in-out;
+
             a {
                 padding-left: 54px;
                 font-weight: 300;
@@ -187,7 +187,7 @@
                 &:focus, 
                 &.mm-active {
                     text-decoration: none;
-                    background-color:black;
+                    color: $primary;
                 } 
     
                 @at-root [direction="rtl"] & {
@@ -215,25 +215,8 @@
             display: block;
             padding: 0.8125rem 1.25rem;
             outline-width: 0;
-            transition: all 0.3s ease-in-out;
-            color: blue;           
+            color: rgba($color: $black, $alpha: .5);           
             text-decoration: none;
-        }
-
-        .mega-menu{
-            ul.in {
-                li {
-                    a {
-                        &:hover,
-                        &:focus,
-                        &.mm-active  {
-                            
-                                color: $primary;
-                            
-                        }
-                    }
-                }
-            }
         }
 
         .has-arrow {
@@ -244,7 +227,7 @@
                 height: 0;
                 border-style: solid;
                 border-width: 0 0 7px 7px;
-                border-color: transparent transparent $white transparent;
+                border-color: transparent transparent rgba($color: $black, $alpha: .8) transparent;
             }
         }
     }
@@ -253,7 +236,6 @@
 
 .metismenu .mm-active>.has-arrow:after, .metismenu .has-arrow[aria-expanded=true]:after {
     transform: rotate(45deg) translateY(-50%);
-    -webkit-transform: rotate(45deg) translateY(-50%);
 }
 
 
@@ -265,50 +247,27 @@
         }
     }
 
-    .header-left {
-        margin-left: 1.875rem;
-
-        input[type="search"] {
-            position: absolute;
-            top: -100%;
-        }
-
-        @at-root [direction="rtl"] #{&} {
-            margin-left: auto;
-            margin-right: 1.875rem;
-        }
-    }
-    .header-content {
-        margin-left: 3.75rem;
-
-        @include media-breakpoint-down(sm) {
-            margin-left: 0;
-        }
-
-        @at-root [direction="rtl"] #{&} {
-            margin-left: 0;
-        }
-    }
     .footer {
         padding-left: 0;
     }
+
     .quixnav {
-        transition: all 0.5s ease-in-out;
-        position: absolute;
+        // transition: all 0.3s ease-in-out;
+        // position: absolute;
         left: 0;
     }
 }
 
 
 
-@media (max-width: 600px) {
-    .input {
-        background-color: $primary;
-        span {
-            &::after {
-                color: $dark;
-            }
-        }
-    }
-}
+// @media (max-width: 600px) {
+//     .input {
+//         background-color: $primary;
+//         span {
+//             &::after {
+//                 color: $dark;
+//             }
+//         }
+//     }
+// }
 

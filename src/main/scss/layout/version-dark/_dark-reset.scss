@@ -14,37 +14,12 @@
     h6 {
         color: $white !important;
     }
-
-    .more-link {
-        color: $d-ctl !important;
+    a.link {
+        color: $d-ctd;
     }
-
-    .bg-white {
-        background-color: lighten($d-bg, 3.2%) !important;
-    }
-
-    .btn-light {
-        border-color: $d-border !important;
-    }
-
-    .text-dark {
-        color: $d-ctl !important;
-    }
-
-    .text-muted {
-        color: $d-ctl !important;
-    }
-
-    .text-pale-sky {
-        color: $d-ctl !important;
-    }
-
-    .nav-pills {
-        border-bottom-color: $d-border;
-    }
-
-    .grid-col {
-        background-color: lighten($d-bg, 3.2%);
+    a.link:focus,
+    a.link:hover {
+        color: $info;
     }
 
     a {

@@ -33,12 +33,18 @@
         }
       }
 
-      .mr#{$infix}-auto,
+      .mr#{$infix}-auto {
+        margin-right: 0!important;
+        margin-left: auto !important;
+      }
       .mx#{$infix}-auto {
         margin-right: auto!important;
         margin-left: auto !important;
       }
-      .ml#{$infix}-auto,
+      .ml#{$infix}-auto {
+        margin-right: auto !important;
+        margin-left: 0 !important;
+      }
       .mx#{$infix}-auto {
         margin-right: auto !important;
         margin-left: auto!important;
@@ -56,8 +62,6 @@
       .float#{$infix}-none  { @include float-none; }
     }
   }
-
-
 
 }
 

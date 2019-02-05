@@ -36,7 +36,7 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 
 
-$blue:    #5289CA;
+$blue:    #1a33D5;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -127,6 +127,8 @@ $sub-heading-size: 1.6rem !default;
 
 $grid-gutter-width: 24px;
 
+$dropdown-lik-color: $body-color;
+
 
 
 $grid-breakpoints: (
@@ -134,7 +136,6 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px, 
-  xxl: 1440
+  xl: 1200px
 );
 

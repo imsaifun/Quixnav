@@ -4,7 +4,15 @@
         background-color: $dark-card;
     }
 
-    .hamburger .toggle-icon {
+    .nav-control {
         color: $white;
+    }
+
+    .brand-logo {
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
     }
 }
