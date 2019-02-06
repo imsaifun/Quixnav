@@ -48,8 +48,10 @@ gulp.task('plugin', function() {
     // Jquery Slimscroll
     gulp.src('node_modules/jquery-slimscroll/jquery.slimscroll.min.js').pipe(gulp.dest('./src/assets/plugins/jquery-slimscroll/'));
 
-
-
+    
+    // highlightjs
+    gulp.src('./node_modules/highlightjs/styles/*.css').pipe(gulp.dest('./src/assets/plugins/highlightjs/styles'));
+    gulp.src('./node_modules/highlightjs/highlight.pack.min.js').pipe(gulp.dest('./src/assets/plugins/highlightjs/'));
 });
 
 //make common js 
@@ -201,19 +203,6 @@ gulp.task('css_minify', function () {
       .pipe(gulp.dest('./../../../Documents/Matex/rtl/main/css/'))
       .pipe(gulp.dest('./../../../Documents/Matex/wide-boxed/main/css/'))
 });
-
-// Gulp task to minify JavaScript files
-// gulp.task('js_minify', function() {
-//     return gulp.src('./src/main')
-//       .pipe(uglify())
-//       .pipe(gulp.dest('./dist/boxed/main/css/'))
-//       .pipe(gulp.dest('./dist/compact/main/css/'))
-//       .pipe(gulp.dest('./dist/demo/main/css/'))
-//       .pipe(gulp.dest('./dist/horizontal/main/css/'))
-//       .pipe(gulp.dest('./dist/mini/main/css/'))
-//       .pipe(gulp.dest('./dist/rtl/main/css/'))
-//       .pipe(gulp.dest('./dist/wide-boxed/main/css/'))
-// });
 
 
 // Gulp task to minify all files
@@ -434,16 +423,6 @@ gulp.task('js_obfuscate', function() {
 
 });
 
-// gulp.task('obfuscate_js', function() {
-//     gulp.src('./src/main/js/**/**')
-//     .pipe(javascriptObfuscator())
-//     .pipe(gulp.dest('./mmm/'))
-// });
-
-// gulp.task('obfuscate', ['js_obfuscate'], function(err) {
-//     console.log(err);
-// })
-
 
 /////////////////////
 //tasks for package
@@ -463,14 +442,6 @@ gulp.task('package', function(){
 gulp.task('img_placeholder', function(){
     gulp.src('./images/**/*').pipe(gulp.dest('./../../../Documents/Package/Matex/assets/images/'));
 });
-
-// gulp.task('blur', function () {
-//     gulp.src('./src/assets/images/**/*').pipe(jimp({
-//         '': {
-//             blur: 5
-//         }
-//     })).pipe(gulp.dest('./package/Matex/assets/images/'));
-// });
 
 
 
@@ -495,14 +466,3 @@ gulp.task('make_package', ['package'], function() {
 
 
 gulp.task('add_comment', ['html_comments', 'css_comments', 'js_comments']);
-
-
-
-
-
-// // HTML Prettify
-// gulp.task('html_prettify', function() {
-//     gulp.src('./src/main/template/*.html')
-//         .pipe(prettify({ indent_char: ' ', indent_size: 4 }))
-//         .pipe(gulp.dest('./dist/main/template/'))
-// });

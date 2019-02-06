@@ -42,6 +42,10 @@
                     a {
                         padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
                     }
+
+                    &>ul {
+                        height: auto !important;
+                    }
                 }
             }
             

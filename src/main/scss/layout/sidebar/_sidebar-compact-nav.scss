@@ -6,7 +6,6 @@
     [data-sidebar-style="compact"] {
 
         .quixnav {
-            // width: 9.375rem;
         
             .metismenu {
                 li {
@@ -39,6 +38,8 @@
 
 [data-layout="vertical"][data-sidebar-style="compact"] {
     .quixnav {
+        width: 9.375rem;
+        
         .metismenu {
             ul ul a {
                 padding: 0.625rem 0.9375rem;

@@ -29,12 +29,26 @@
                 [data-sidebar-style="mini"]#{&} {
                     padding-right: 0;
                 }
+
+                @include media-breakpoint-down(sm) {
+                    // padding-left: 0;
+                    padding-right: 0;
+                    // justify-content: center;
+                }
             }
         }
 
         .nav-control {
             right: auto;
             left: -3.5rem;
+
+            @include media-breakpoint-down(sm) {
+                left: -3rem;
+            }
+        
+            @include media-breakpoint-down(xs) {
+                left: -2.5rem;
+            }
         }
 
         &[data-sidebar-style="overlay"] {

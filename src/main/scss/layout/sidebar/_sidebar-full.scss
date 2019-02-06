@@ -64,15 +64,17 @@
                         z-index: 1001;
                         display: none;
                         padding-left: 1px;
-                        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+                        box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.15);
+                        height: auto !important;
                         
-                        @at-root [data-theme-version="dark"]#{&} {
-                            box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
-                        }
+                        // @at-root [data-theme-version="dark"]#{&} {
+                        //     box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+                        // }
 
                         @at-root [direction="rtl"]#{&} {
                             left: auto;
                             right: 3.75rem;
+                            box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.15);
                         }
 
                         li:hover {
@@ -108,6 +110,11 @@
                             &>ul {
                                 bottom: 2.9375rem;
                                 top: auto;
+                                box-shadow: 6px -6px 10px rgba(0, 0, 0, 0.15);
+
+                                @at-root [direction="rtl"]#{&} {
+                                    box-shadow: -6px -6px 10px rgba(0, 0, 0, 0.15);
+                                }
                             }
                         }
 

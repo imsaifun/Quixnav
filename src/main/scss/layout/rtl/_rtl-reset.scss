@@ -96,8 +96,13 @@ html[dir="rtl"]{
             border-left: 0 !important;
         }
 
+        .dropdown-menu {
+            left: auto;
+        }
+
         .dropdown-menu-right {
             left: 0;
+            right: auto;
         }
     }
 }

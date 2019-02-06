@@ -45,6 +45,10 @@
             .dropdown-menu {
                 width: 100vw;
                 left: -98px; 
+
+                @at-root [direction="rtl"] & {
+                    right: -98px;
+                }
             }
         }
 

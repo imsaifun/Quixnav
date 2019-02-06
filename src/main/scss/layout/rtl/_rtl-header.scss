@@ -1,4 +1,4 @@
-html[dir="rtl"] {
+// html[dir="rtl"] {
 
     //header styles
     [direction="rtl"] {
@@ -7,13 +7,17 @@ html[dir="rtl"] {
             padding-right: 17.1875rem;
 
             @include media-breakpoint-down(sm) {
-                padding-right: 2.3438rem;
+                padding-right: 3.75rem;
                 padding-left: 0;
             }
 
             .header-content {
                 padding-left: 0;
                 padding-right: 4.375rem;
+
+                @include custommq($max: 575px) {
+                    padding-right: 2.375rem;
+                }
             }
 
             .nav-control {
@@ -44,4 +48,4 @@ html[dir="rtl"] {
         }
     }
 
-}
+// }
