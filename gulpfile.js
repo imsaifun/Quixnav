@@ -116,6 +116,13 @@ gulp.task('copy_dist', function(){
     gulp.src('./src/**/*').pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('make_package', function(){
+    gulp.src('./src/**/*').pipe(gulp.dest('./package/QuixNav/'));
+    gulp.src('./documentation/**/*').pipe(gulp.dest('./package/documentation/'));
+    gulp.src('./package.json').pipe(gulp.dest('./package/QuixNav/'));
+    gulp.src('./userGulp/gulpfile.js').pipe(gulp.dest('./package/QuixNav/'));
+});
+
 gulp.task('js_obfuscate', function() {
 
     //main
@@ -172,8 +179,8 @@ Commands to make dist and ready to use
 
     => After project completion
         1. gulp copy_dist
-        2. gulp add_comment
-        3. gulp js_obfuscate
+        2. gulp make_package
+        3. gulp add_comment
         4. gulp prefix_css
 
 */
