@@ -1,3 +1,20 @@
+/*
+Commands to make dist and ready to use
+
+    => Before starting project
+        1. gulp update
+        2. gulp common_js
+
+
+    => After project completion
+        1. gulp copy_dist
+        2. gulp make_package
+        3. gulp add_comment
+        4. gulp prefix_css
+
+*/
+
+
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const headerComment = require('gulp-header-comment');
@@ -9,7 +26,7 @@ const sourcemaps   = require('gulp-sourcemaps');
 
 
 // File Copy
-gulp.task('plugin', function() {
+gulp.task('update', function() {
     // Jquery
     gulp.src('./node_modules/jquery/dist/jquery.min.js').pipe(gulp.dest('./src/assets/plugins/jquery/'));
 
@@ -111,7 +128,6 @@ gulp.task('js_comments', function() {
     .pipe(gulp.dest('./dist/main/js/'))
 });
 
-
 gulp.task('copy_dist', function(){
     gulp.src('./src/**/*').pipe(gulp.dest('./dist/'));
 });
@@ -132,10 +148,8 @@ gulp.task('js_obfuscate', function() {
 
 });
 
-
-
 //prefix css for browser support
-// Set the browser that you want to support
+// Set the browser that you want to have support
 const AUTOPREFIXER_BROWSERS = [
     'ie >= 10',
     'ie_mob >= 10',
@@ -161,26 +175,5 @@ gulp.task('prefix_css', function () {
         .pipe(gulp.dest('./dist/main/css/'));
 });
 
-
-
 //add comment
 gulp.task('add_comment', ['html_comments', 'css_comments', 'js_comments']);
-
-
-
-
-/*
-Commands to make dist and ready to use
-
-    => Before starting project
-        1. gulp plugin
-        2. gulp common_js
-
-
-    => After project completion
-        1. gulp copy_dist
-        2. gulp make_package
-        3. gulp add_comment
-        4. gulp prefix_css
-
-*/

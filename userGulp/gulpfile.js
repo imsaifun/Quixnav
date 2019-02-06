@@ -1,3 +1,17 @@
+/*
+Commands to make dist and ready to use
+
+    => Before starting project
+        1. npm install
+        2. gulp update
+        3. gulp common_js
+
+
+    => After project completion
+        1. gulp prefix_css
+        
+*/
+
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const autoprefixer = require('autoprefixer');
@@ -7,7 +21,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 
 // File Copy
-gulp.task('plugin', function() {
+gulp.task('update', function() {
     // Jquery
     gulp.src('./node_modules/jquery/dist/jquery.min.js').pipe(gulp.dest('./src/assets/plugins/jquery/'));
 
@@ -76,27 +90,3 @@ gulp.task('prefix_css', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./dist/main/css/'));
 });
-
-
-
-//add comment
-gulp.task('add_comment', ['html_comments', 'css_comments', 'js_comments']);
-
-
-
-
-/*
-Commands to make dist and ready to use
-
-    => Before starting project
-        1. gulp plugin
-        2. gulp common_js
-
-
-    => After project completion
-        1. gulp copy_dist
-        2. gulp make_package
-        3. gulp add_comment
-        4. gulp prefix_css
-
-*/
