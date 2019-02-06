@@ -1,0 +1,172 @@
+@media (min-width:767px) {
+    [data-sidebar-style="modern"] {
+
+        .nav-header {
+            width: 9.375rem;
+        }
+
+        .quixnav {
+        
+            .metismenu {
+                &>li {
+                    text-align: center;
+
+                    &>a {
+                        padding: 0.8125rem 1.75rem;
+
+                        &::after {
+                            display: none;
+                        }
+
+                        &:hover, 
+                        &:focus, 
+                        &:active, 
+                        &.mm-active {
+                            &>a {
+                                background-color: lighten($color: $primary, $amount: 50%);
+                            }
+                        }
+                    }
+
+                    li {
+                        text-align: left;
+
+                        @at-root [direction="rtl"]#{&} {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                li {
+
+                    a {
+                        padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+                    }
+
+                    &>ul {
+                        height: auto !important;
+                    }
+                }
+            }
+            
+
+            .nav-text {
+                display: block;
+                margin-top: 0.3125rem;
+            }
+        }
+
+        .footer {
+            padding-left: 9.375rem;
+        }
+        .content-body {
+            margin-left: 9.375rem;
+        }
+    }
+
+    [data-sidebar-style="modern"][data-layout="vertical"] {
+
+        .quixnav {
+            width: 9.375rem;
+            transition: right, left .2s ease-in-out;
+
+            .slimScrollDiv, 
+            .quixnav-scroll {
+                overflow: visible !important;
+            }
+        
+            .metismenu {
+                &>li {
+
+                    &>ul {
+                        display: none;
+                    }
+                }
+
+                li {
+                    position: static;
+
+                    a {
+                        padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+                    }
+
+                    ul {
+                        position: absolute;
+                        left: 105%;
+                        top: 0;
+                        bottom: 0;
+                        background-color: $white;
+                        width: 200px;
+                        box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1);
+
+                        @at-root [direction="rtl"]#{&} {
+                            left: auto;
+                            right: 105%;
+                        }
+                    }
+
+                    &:hover {
+                        &>ul {
+                            display: block;
+                            left: 100%;
+
+                            @at-root [direction="rtl"]#{&} {
+                                left: auto;
+                                right: 100%;
+                            }  
+                        }
+                    }
+                }
+            }
+            
+
+            .nav-text {
+                display: block;
+                margin-top: 0.3125rem;
+            }
+        }
+
+
+        .menu-toggle {
+            .quixnav {
+                left: -9.375rem;
+
+                @at-root [direction="rtl"]#{&} {
+                    left: auto;
+                    right: -9.375rem;
+                }
+            }
+        }
+    }
+
+    [data-sidebar-style="modern"][data-layout="horizontal"] {
+
+        .quixnav {
+            .metismenu {
+
+                &>li {
+                    &>a {
+                        padding: 0.8125rem 2.25rem;
+                    }
+
+                    &>ul {
+                        top: 4.5625rem;
+                    }
+                }
+            }
+        }
+
+        &[data-container="boxed"] {
+            .quixnav {
+                .metismenu {
+    
+                    &>li {
+                        &>a {
+                            padding: 0.8125rem 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

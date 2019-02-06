@@ -1,5 +1,5 @@
 {
-  "name": "Quixnav",
+  "name": "quixnav",
   "version": "1.0.0",
   "description": "A whole navigation for admin dashboard",
   "main": "index.js",
@@ -19,11 +19,13 @@
   "homepage": "https://github.com/quixlab/Quixnav#readme",
   "devDependencies": {
     "autoprefixer": "^9.4.4",
-    "csso": "^3.5.1",
+    "cssnano": "^4.1.8",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-header-comment": "^0.4.0",
     "gulp-javascript-obfuscator": "^1.1.5",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
     "node-sass": "^4.11.0",
     "run-sequence": "^2.2.1"
   },

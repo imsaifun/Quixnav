@@ -1,6 +1,7 @@
 (function($) {
     "use strict"
 
+    //get the DOM elements from right sidebar
     const versionSelect = $('#theme_version');
     const layoutSelect = $('#theme_layout');
     const sidebarStyleSelect = $('#sidebar_style');
@@ -9,20 +10,24 @@
     const containerLayoutSelect = $('#container_layout');
     const themeDirectionSelect = $('#theme_direction');
 
+    //change the theme version controller
     versionSelect.on('change', function() {
         $('body').attr('data-theme-version', this.value);
     });
 
+    //change the sidebar position controller
     sidebarPositionSelect.on('change', function() {
         this.value === "fixed" && $('body').attr('data-sidebar-style') === "modern" && $('body').attr('data-layout') === "vertical" ? 
         alert("Sorry, Modern sidebar layout dosen't support fixed position!") :
         $('body').attr('data-sidebar-position', this.value);
     });
 
+    //change the header position controller
     headerPositionSelect.on('change', function() {
         $('body').attr('data-header-position', this.value);
     });
 
+    //change the theme direction (rtl, ltr) controller
     themeDirectionSelect.on('change', function() {
         $('html').attr('dir', this.value);
         $('html').attr('class', '');
@@ -30,6 +35,7 @@
         $('body').attr('direction', this.value);
     });
 
+    //change the theme layout controller
     layoutSelect.on('change', function() {
         if($('body').attr('data-sidebar-style') === 'overlay') {
             $('body').attr('data-sidebar-style', 'full');
@@ -40,13 +46,9 @@
         $('body').attr('data-layout', this.value);
     });
 
+    //change the container layout controller
     containerLayoutSelect.on('change', function() {
         if(this.value === "boxed") {
-            // if($('body').attr('data-sidebar-style') === "overlay" && $('body').attr('data-layout') === "horizontal") {
-            //     $('body').attr('data-sidebar-style', 'full');
-            //     $('body').attr('data-container', this.value);
-            //     return;
-            // }
 
             if($('body').attr('data-layout') === "vertical" && $('body').attr('data-sidebar-style') === "full") {
                 $('body').attr('data-sidebar-style', 'overlay');
@@ -58,6 +60,7 @@
         $('body').attr('data-container', this.value);
     });
 
+    //change the sidebar style controller
     sidebarStyleSelect.on('change', function() {
         if($('body').attr('data-layout') === "horizontal") {
             if(this.value === "overlay") {
@@ -81,22 +84,20 @@
         $('body').attr('data-sidebar-style', this.value);
     });
 
+    //change the nav-header background controller
     $('input[name="navigation_header"]').on('click', function() {
         $('body').attr('data-nav-headerbg', this.value);
     });
 
+    //change the header background controller
     $('input[name="header_bg"]').on('click', function() {
         $('body').attr('data-headerbg', this.value);
     });
 
+    //change the sidebar background controller
     $('input[name="sidebar_bg"]').on('click', function() {
         $('body').attr('data-sibebarbg', this.value);
     });
-
-
-
-
-
 
 
 })(jQuery);
