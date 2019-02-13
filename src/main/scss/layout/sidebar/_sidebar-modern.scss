@@ -47,6 +47,9 @@
                         height: auto !important;
                     }
                 }
+                .nav-label{
+                    display: none;
+                }
             }
 
             .nav-label {
@@ -84,6 +87,7 @@
 
                     &>ul {
                         display: none;
+                        padding: 1.875rem 0.9375rem;
                     }
                 }
 
