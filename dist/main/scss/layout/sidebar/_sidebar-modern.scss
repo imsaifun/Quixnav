@@ -47,6 +47,13 @@
                         height: auto !important;
                     }
                 }
+                .nav-label{
+                    display: none;
+                }
+            }
+
+            .nav-label {
+                display: none;
             }
             
 
@@ -80,6 +87,7 @@
 
                     &>ul {
                         display: none;
+                        padding: 1.875rem 0.9375rem;
                     }
                 }
 
@@ -109,6 +117,7 @@
                         &>ul {
                             display: block;
                             left: 100%;
+                            padding: 1.875rem 0;
 
                             @at-root [direction="rtl"]#{&} {
                                 left: auto;

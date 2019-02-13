@@ -3,23 +3,7 @@
  * ******* Name: quixnav
  * ******* Description: A whole navigation for admin dashboard
  * ******* Version: 1.0.0
- * ******* Released on 2019-02-13 12:12:45
- * ******* Support Email :
- * ******* Support Skype :
- * ******* Development/Code Author:
- * ******* Author URL:
- * ******* Themeforest URL (Development):
- * ******* Design Author:
- * ******* License: ISC
- * ***************************************************
- */
-
-/**
- * **************************************************
- * ******* Name: quixnav
- * ******* Description: A whole navigation for admin dashboard
- * ******* Version: 1.0.0
- * ******* Released on 2019-02-13 12:10:02
+ * ******* Released on 2019-02-13 12:51:34
  * ******* Support Email :
  * ******* Support Skype :
  * ******* Development/Code Author:
@@ -7873,6 +7857,10 @@ li {
     padding: 0.625rem 0.9375rem 0.625rem 0.9375rem; }
   [data-sidebar-style="modern"] .quixnav .metismenu li > ul {
     height: auto !important; }
+  [data-sidebar-style="modern"] .quixnav .metismenu .nav-label {
+    display: none; }
+  [data-sidebar-style="modern"] .quixnav .nav-label {
+    display: none; }
   [data-sidebar-style="modern"] .quixnav .nav-text {
     display: block;
     margin-top: 0.3125rem; }
@@ -7887,7 +7875,8 @@ li {
     [data-sidebar-style="modern"][data-layout="vertical"] .quixnav .quixnav-scroll {
       overflow: visible !important; }
     [data-sidebar-style="modern"][data-layout="vertical"] .quixnav .metismenu > li > ul {
-      display: none; }
+      display: none;
+      padding: 1.875rem 0.9375rem; }
     [data-sidebar-style="modern"][data-layout="vertical"] .quixnav .metismenu li {
       position: static; }
       [data-sidebar-style="modern"][data-layout="vertical"] .quixnav .metismenu li a {
@@ -7904,7 +7893,8 @@ li {
           right: 105%; }
       [data-sidebar-style="modern"][data-layout="vertical"] .quixnav .metismenu li:hover > ul {
         display: block;
-        left: 100%; }
+        left: 100%;
+        padding: 1.875rem 0; }
         [direction="rtl"][data-sidebar-style="modern"][data-layout="vertical"] .quixnav .metismenu li:hover > ul {
           left: auto;
           right: 100%; }
