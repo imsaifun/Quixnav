@@ -48,6 +48,10 @@
                     }
                 }
             }
+
+            .nav-label {
+                display: none;
+            }
             
 
             .nav-text {
@@ -109,6 +113,7 @@
                         &>ul {
                             display: block;
                             left: 100%;
+                            padding: 1.875rem 0;
 
                             @at-root [direction="rtl"]#{&} {
                                 left: auto;
