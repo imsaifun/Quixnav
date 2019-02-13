@@ -2,7 +2,7 @@
 Commands to make dist and ready to use
 
     => Before starting project
-        1. gulp update
+        1. gulp build_plugins
         2. gulp common_js
 
 
@@ -11,6 +11,7 @@ Commands to make dist and ready to use
         2. gulp make_package
         3. gulp add_comment
         4. gulp prefix_css
+        5. gulp js_obfuscate
 
 */
 
@@ -26,7 +27,7 @@ const sourcemaps   = require('gulp-sourcemaps');
 
 
 // File Copy
-gulp.task('update', function() {
+gulp.task('build_plugins', function() {
     // Jquery
     gulp.src('./node_modules/jquery/dist/jquery.min.js').pipe(gulp.dest('./src/assets/plugins/jquery/'));
 
@@ -86,6 +87,7 @@ gulp.task('html_comments', function() {
     ***************************************************
     `))
     .pipe(gulp.dest('./dist/main/template/'))
+    .pipe(gulp.dest('./package/QuixNav/src/main/template/'))
 });
 
 gulp.task('css_comments', function() {
@@ -106,6 +108,7 @@ gulp.task('css_comments', function() {
         ***************************************************
     `))
     .pipe(gulp.dest('./dist/main/css/'))
+    .pipe(gulp.dest('./package/QuixNav/src/main/css/'))
 });
 
 gulp.task('js_comments', function() {
@@ -126,6 +129,7 @@ gulp.task('js_comments', function() {
     ***************************************************
     `))
     .pipe(gulp.dest('./dist/main/js/'))
+    .pipe(gulp.dest('./package/QuixNav/src/main/js/'))
 });
 
 gulp.task('copy_dist', function(){
@@ -133,7 +137,7 @@ gulp.task('copy_dist', function(){
 });
 
 gulp.task('make_package', function(){
-    gulp.src('./src/**/*').pipe(gulp.dest('./package/QuixNav/'));
+    gulp.src('./src/**/*').pipe(gulp.dest('./package/QuixNav/src/'));
     gulp.src('./documentation/**/*').pipe(gulp.dest('./package/documentation/'));
     gulp.src('./package.json').pipe(gulp.dest('./package/QuixNav/'));
     gulp.src('./userGulp/gulpfile.js').pipe(gulp.dest('./package/QuixNav/'));
@@ -164,7 +168,7 @@ const AUTOPREFIXER_BROWSERS = [
 
 gulp.task('prefix_css', function () {
     const plugins = [
-        autoprefixer({browsers: AUTOPREFIXER_BROWSERS}),
+        autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }),
         cssnano()
     ];
 
@@ -176,4 +180,4 @@ gulp.task('prefix_css', function () {
 });
 
 //add comment
-gulp.task('add_comment', ['html_comments', 'css_comments', 'js_comments']);
+gulp.task('add_comment', ['html_comments', 'css_comments']);

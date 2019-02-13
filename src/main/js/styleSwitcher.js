@@ -1,3 +1,19 @@
+/**
+ * **************************************************
+ * ******* Name: quixnav
+ * ******* Description: A whole navigation for admin dashboard
+ * ******* Version: 1.0.0
+ * ******* Released on 2019-02-13 12:10:02
+ * ******* Support Email :
+ * ******* Support Skype :
+ * ******* Development/Code Author:
+ * ******* Author URL:
+ * ******* Themeforest URL (Development):
+ * ******* Design Author:
+ * ******* License: ISC
+ * ***************************************************
+ */
+
 (function($) {
     "use strict"
 
@@ -20,6 +36,19 @@
         this.value === "fixed" && $('body').attr('data-sidebar-style') === "modern" && $('body').attr('data-layout') === "vertical" ? 
         alert("Sorry, Modern sidebar layout dosen't support fixed position!") :
         $('body').attr('data-sidebar-position', this.value);
+
+        if($('body').attr('data-sidebar-position') === "fixed") {
+            $('.quixnav-scroll').slimscroll({
+                position: "right",
+                size: "5px",
+                height: "100%",
+                color: "transparent"
+            })
+        } else {
+            $('.quixnav-scroll').slimscroll({
+                destroy: true
+            })
+        }
     });
 
     //change the header position controller
@@ -99,5 +128,6 @@
         $('body').attr('data-sibebarbg', this.value);
     });
 
-
 })(jQuery);
+
+

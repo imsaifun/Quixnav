@@ -1,3 +1,19 @@
+/**
+ * **************************************************
+ * ******* Name: quixnav
+ * ******* Description: A whole navigation for admin dashboard
+ * ******* Version: 1.0.0
+ * ******* Released on 2019-02-13 12:10:02
+ * ******* Support Email :
+ * ******* Support Skype :
+ * ******* Development/Code Author:
+ * ******* Author URL:
+ * ******* Themeforest URL (Development):
+ * ******* Design Author:
+ * ******* License: ISC
+ * ***************************************************
+ */
+
 /*
 Table of Contents
 
@@ -7865,7 +7881,6 @@ li {
         left: 105%;
         top: 0;
         bottom: 0;
-        background-color: #fff;
         width: 200px;
         box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1); }
         [direction="rtl"][data-sidebar-style="modern"][data-layout="vertical"] .quixnav .metismenu li ul {
@@ -7885,6 +7900,8 @@ li {
     [direction="rtl"][data-sidebar-style="modern"][data-layout="vertical"] .menu-toggle .quixnav {
       left: auto;
       right: -9.375rem; }
+  [data-sidebar-style="modern"][data-layout="vertical"] .menu-toggle .content-body {
+    margin-left: 0; }
   [data-sidebar-style="modern"][data-layout="horizontal"] .quixnav .metismenu > li > a {
     padding: 0.8125rem 2.25rem; }
   [data-sidebar-style="modern"][data-layout="horizontal"] .quixnav .metismenu > li > ul {
@@ -10409,7 +10426,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_2"] .quixnav .metismenu a:hover, [data-sibebarbg="color_2"] .quixnav .metismenu a:focus, [data-sibebarbg="color_2"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_2"] .quixnav .metismenu ul {
-    background-color: #30323F; }
+    background-color: #1a1b22; }
   [data-sibebarbg="color_2"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
@@ -10429,7 +10446,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_3"] .quixnav .metismenu a:hover, [data-sibebarbg="color_3"] .quixnav .metismenu a:focus, [data-sibebarbg="color_3"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_3"] .quixnav .metismenu ul {
-    background-color: #6a1b9a; }
+    background-color: #4c136f; }
   [data-sibebarbg="color_3"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
@@ -10449,7 +10466,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_4"] .quixnav .metismenu a:hover, [data-sibebarbg="color_4"] .quixnav .metismenu a:focus, [data-sibebarbg="color_4"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_4"] .quixnav .metismenu ul {
-    background-color: #4527a0; }
+    background-color: #331d77; }
   [data-sibebarbg="color_4"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
@@ -10469,7 +10486,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_5"] .quixnav .metismenu a:hover, [data-sibebarbg="color_5"] .quixnav .metismenu a:focus, [data-sibebarbg="color_5"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_5"] .quixnav .metismenu ul {
-    background-color: #c62828; }
+    background-color: #9c1f1f; }
   [data-sibebarbg="color_5"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
@@ -10489,7 +10506,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_6"] .quixnav .metismenu a:hover, [data-sibebarbg="color_6"] .quixnav .metismenu a:focus, [data-sibebarbg="color_6"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_6"] .quixnav .metismenu ul {
-    background-color: #283593; }
+    background-color: #1d276b; }
   [data-sibebarbg="color_6"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
@@ -10509,7 +10526,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_7"] .quixnav .metismenu a:hover, [data-sibebarbg="color_7"] .quixnav .metismenu a:focus, [data-sibebarbg="color_7"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_7"] .quixnav .metismenu ul {
-    background-color: #1565c0; }
+    background-color: #104d92; }
   [data-sibebarbg="color_7"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
@@ -10529,7 +10546,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_8"] .quixnav .metismenu a:hover, [data-sibebarbg="color_8"] .quixnav .metismenu a:focus, [data-sibebarbg="color_8"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_8"] .quixnav .metismenu ul {
-    background-color: #0277bd; }
+    background-color: #01578b; }
   [data-sibebarbg="color_8"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
@@ -10549,7 +10566,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_9"] .quixnav .metismenu a:hover, [data-sibebarbg="color_9"] .quixnav .metismenu a:focus, [data-sibebarbg="color_9"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_9"] .quixnav .metismenu ul {
-    background-color: #00838f; }
+    background-color: #00545c; }
   [data-sibebarbg="color_9"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
@@ -10569,7 +10586,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_10"] .quixnav .metismenu a:hover, [data-sibebarbg="color_10"] .quixnav .metismenu a:focus, [data-sibebarbg="color_10"] .quixnav .metismenu a.mm-active {
       color: #fff; }
   [data-sibebarbg="color_10"] .quixnav .metismenu ul {
-    background-color: #558b2f; }
+    background-color: #3e6522; }
   [data-sibebarbg="color_10"] .quixnav .metismenu .has-arrow:after {
     border-color: transparent transparent #b3b3b3 transparent; }
 
