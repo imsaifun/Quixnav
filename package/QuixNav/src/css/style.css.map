@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/project/main.scss",
+		"../scss/project/abstracts/_abstracts.scss"
+	],
+	"names": [],
+	"mappings": "AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAwGE;ACxGF,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,IAAI,GACzB"
+}

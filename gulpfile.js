@@ -1,22 +1,21 @@
 /*
 Commands to make dist and ready to use
 
-    => Before starting project
-        1. gulp build_plugins
-        2. gulp common_js
+=> Before starting project
+    1. gulp build_plugins
+    2. gulp quixnav_js
 
 
-    => After project completion
-        1. gulp copy_dist
-        2. gulp make_package
-        3. gulp add_comment
-        4. gulp prefix_css
-        5. gulp js_obfuscate
+=> After project completion
+    1. gulp copy_dist
+    2. gulp make_package
+    3. gulp add_comment
+    4. gulp js_obfuscate
 
 */
 
 
-const gulp = require('gulp');
+const {src, dest, series} = require('gulp');
 const concat = require('gulp-concat');
 const headerComment = require('gulp-header-comment');
 const autoprefixer = require('autoprefixer');
@@ -27,50 +26,45 @@ const sourcemaps   = require('gulp-sourcemaps');
 
 
 // File Copy
-gulp.task('build_plugins', function() {
+function build_plugins() {
     // Jquery
-    gulp.src('./node_modules/jquery/dist/jquery.min.js').pipe(gulp.dest('./src/assets/plugins/jquery/'));
+    src('./node_modules/jquery/dist/jquery.min.js').pipe(dest('./src/vendor/jquery/'));
 
     // Bootstrap
-    gulp.src('node_modules/bootstrap/scss/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap/scss/'));
-    gulp.src('node_modules/bootstrap/scss/mixins/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap/scss/mixins/'));
-    gulp.src('node_modules/bootstrap/scss/utilities/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap/scss/utilities/'));
-    gulp.src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js').pipe(gulp.dest('./src/assets/plugins/bootstrap/js/'));
+    src('node_modules/bootstrap/scss/**/*').pipe(dest('./src/vendor/bootstrap/scss/'));
+    src('node_modules/bootstrap/dist/css/bootstrap.min.css').pipe(dest('./src/vendor/bootstrap/dist/css/'));
+    src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js').pipe(dest('./src/vendor/bootstrap/dist/js/'));
 
     // Bootstrap rtl
-    gulp.src('node_modules/bootstrap-v4-rtl/scss/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap-v4-rtl/scss/'));
-    gulp.src('node_modules/bootstrap-v4-rtl/scss/mixins/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap-v4-rtl/scss/mixins/'));
-    gulp.src('node_modules/bootstrap-v4-rtl/scss/utilities/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap-v4-rtl/scss/utilities/'));
+    src('node_modules/bootstrap-v4-rtl/scss/**/*').pipe(dest('./src/vendor/bootstrap-v4-rtl/scss/'));
 
     // Animate.css
-    gulp.src('node_modules/animate.css/animate.min.css').pipe(gulp.dest('./src/assets/plugins/animate/'));
+    src('node_modules/animate.css/animate.min.css').pipe(dest('./src/vendor/animate/'));
 
     // MetisMenu
-    gulp.src('node_modules/metismenu/dist/metisMenu.min.css').pipe(gulp.dest('./src/assets/plugins/metismenu/css/'));
-    gulp.src('node_modules/metismenu/dist/metisMenu.min.js').pipe(gulp.dest('./src/assets/plugins/metismenu/js/'));
+    src('node_modules/metismenu/dist/metisMenu.min.css').pipe(dest('./src/vendor/metismenu/css/'));
+    src('node_modules/metismenu/dist/metisMenu.min.js').pipe(dest('./src/vendor/metismenu/js/'));
     
     // Jquery Slimscroll
-    gulp.src('node_modules/jquery-slimscroll/jquery.slimscroll.min.js').pipe(gulp.dest('./src/assets/plugins/jquery-slimscroll/'));
+    src('node_modules/jquery-slimscroll/jquery.slimscroll.min.js').pipe(dest('./src/vendor/jquery-slimscroll/'));
 
     
     // highlightjs
-    gulp.src('./node_modules/highlightjs/styles/*.css').pipe(gulp.dest('./src/assets/plugins/highlightjs/styles'));
-    gulp.src('./node_modules/highlightjs/highlight.pack.min.js').pipe(gulp.dest('./src/assets/plugins/highlightjs/'));
-});
+    src('./node_modules/highlightjs/styles/*.css').pipe(dest('./src/vendor/highlightjs/styles'));
+    src('./node_modules/highlightjs/highlight.pack.min.js').pipe(dest('./src/vendor/highlightjs/'));
+}
 
 //make common js 
-gulp.task('common_js', function() {
-    return gulp.src(['./src/assets/plugins/jquery/jquery.min.js',
-            './src/assets/plugins/bootstrap/js/bootstrap.bundle.min.js',
-            './src/assets/plugins/metismenu/js/metisMenu.min.js',
-            './src/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js'
+function quixnav_js() {
+    return src(['./src/vendor/metismenu/js/metisMenu.min.js',
+            './src/js/settings.js'
         ])
-        .pipe(concat('common.min.js'))
-        .pipe(gulp.dest('./src/assets/plugins/common/'));
-});
+        .pipe(concat('quixnav.min.js'))
+        .pipe(dest('./src/vendor/quixnav/'));
+};
 
-gulp.task('html_comments', function() {
-    return gulp.src('./src/main/template/*.html')
+function html_comments() {
+    return src('./src/*.html')
     .pipe(headerComment(`
     **************************************************
     ******* Name: <%= pkg.name %>
@@ -86,12 +80,29 @@ gulp.task('html_comments', function() {
     ******* License: <%= pkg.license %>
     ***************************************************
     `))
-    .pipe(gulp.dest('./dist/main/template/'))
-    .pipe(gulp.dest('./package/QuixNav/src/main/template/'))
-});
+    .pipe(dest('./dist/'))
+    .pipe(dest('./package/QuixNav/src/'))
+};
 
-gulp.task('css_comments', function() {
-    return gulp.src('./src/main/css/*.css')
+function css_comments() {
+    const AUTOPREFIXER_BROWSERS = [
+        'ie >= 10',
+        'ie_mob >= 10',
+        'ff >= 30',
+        'chrome >= 34',
+        'safari >= 7',
+        'opera >= 23',
+        'ios >= 7',
+        'android >= 4.4',
+        'bb >= 10'
+    ];
+
+    const plugins = [
+        autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }),
+        cssnano()
+    ];
+
+    return src('./src/css/*.css')
     .pipe(headerComment(`
         **************************************************
         ******* Name: <%= pkg.name %>
@@ -107,12 +118,15 @@ gulp.task('css_comments', function() {
         ******* License: <%= pkg.license %>
         ***************************************************
     `))
-    .pipe(gulp.dest('./dist/main/css/'))
-    .pipe(gulp.dest('./package/QuixNav/src/main/css/'))
-});
+    .pipe(sourcemaps.init())
+    .pipe(postcss(plugins))
+    .pipe(sourcemaps.write('.'))
+    .pipe(dest('./dist/css/'))
+    .pipe(dest('./package/QuixNav/src/css/'))
+};
 
-gulp.task('js_comments', function() {
-    return gulp.src('./src/main/js/**/*.js')
+function js_comments() {
+    return src('./src/js/**/*.js')
     .pipe(headerComment(`
     **************************************************
     ******* Name: <%= pkg.name %>
@@ -128,56 +142,41 @@ gulp.task('js_comments', function() {
     ******* License: <%= pkg.license %>
     ***************************************************
     `))
-    .pipe(gulp.dest('./dist/main/js/'))
-    .pipe(gulp.dest('./package/QuixNav/src/main/js/'))
-});
+    .pipe(dest('./dist/js/'))
+    .pipe(dest('./package/QuixNav/src/js/'))
+};
 
-gulp.task('copy_dist', function(){
-    gulp.src('./src/**/*').pipe(gulp.dest('./dist/'));
-});
+function copy_dist(){
+    return src('./src/**/*').pipe(dest('./dist/'));
+};
 
-gulp.task('make_package', function(){
-    gulp.src('./src/**/*').pipe(gulp.dest('./package/QuixNav/src/'));
-    gulp.src('./documentation/**/*').pipe(gulp.dest('./package/documentation/'));
-    gulp.src('./package.json').pipe(gulp.dest('./package/QuixNav/'));
-    gulp.src('./userGulp/gulpfile.js').pipe(gulp.dest('./package/QuixNav/'));
-});
+function make_package(cb){
+    src('./src/**/*').pipe(dest('./package/QuixNav/src/'));
+    src('./documentation/**/*').pipe(dest('./package/documentation/'));
+    src('./package.json').pipe(dest('./package/QuixNav/'));
+    src('./userGulp/gulpfile.js').pipe(dest('./package/QuixNav/'));
+    cb();
+};
 
-gulp.task('js_obfuscate', function() {
+function js_obfuscate() {
 
     //main
-    gulp.src('./dist/main/js/*')
+    return src('./dist/js/*')
     .pipe(javascriptObfuscator())
-    .pipe(gulp.dest('./dist/main/js/'));
+    .pipe(dest('./dist/js/'));
 
-});
+};
 
-//prefix css for browser support
-// Set the browser that you want to have support
-const AUTOPREFIXER_BROWSERS = [
-    'ie >= 10',
-    'ie_mob >= 10',
-    'ff >= 30',
-    'chrome >= 34',
-    'safari >= 7',
-    'opera >= 23',
-    'ios >= 7',
-    'android >= 4.4',
-    'bb >= 10'
-];
+function add_comment() {
+    return series(html_comments, css_comments);
+}
 
-gulp.task('prefix_css', function () {
-    const plugins = [
-        autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }),
-        cssnano()
-    ];
-
-    return gulp.src('./src/main/css/*.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss(plugins))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./dist/main/css/'));
-});
-
-//add comment
-gulp.task('add_comment', ['html_comments', 'css_comments']);
+exports.build_plugins = build_plugins;
+exports.quixnav_js = quixnav_js;
+exports.copy_dist = copy_dist;
+exports.make_package = make_package;
+exports.html_comments = html_comments;
+exports.css_comments = css_comments;
+exports.js_comments = js_comments;
+exports.js_obfuscate = js_obfuscate;
+exports.add_comment = add_comment;

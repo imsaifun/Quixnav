@@ -1,0 +1,149 @@
+@media (min-width: 767px) {
+
+    [data-sidebar-style="icon-hover"][data-layout="vertical"] {
+        .nav-header {
+            width: 4.38rem;
+
+            .brand-logo {
+                padding-left: 1.6rem;
+
+                .logo-abbr {
+                    display: block;
+                }
+
+                .brand-title {
+                    display: none;
+                }
+            }
+
+            .nav-control {
+                display: none;
+            }
+        }
+
+        .header {
+            padding-left: 4.38rem;
+
+            @at-root [direction="rtl"]#{&} {
+                padding-right: 4.38rem;
+                padding-left: 0.9375rem;
+            }
+        }
+
+        .quixnav {
+            overflow: visible;
+            position: absolute;
+            left: -205px;
+            z-index: 1;
+
+            @at-root [direction="rtl"]#{&} {
+                left: auto;
+                right: -205px;
+            }
+
+            .nav-label {
+                display: none;
+            }
+
+            .metismenu {
+                &>li {
+                    &>a {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        &>i {
+                            order: 1;
+                        }
+                    }
+                }
+
+                ul {
+                    a {
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: "\e094";
+                            right: 1.75rem;
+                            font-family: simple-line-icons;
+
+                            @at-root [direction="rtl"]#{&} {
+                                right: auto;
+                                left: 1.75rem;
+                            }
+                        }
+                    }
+                }
+
+                .has-arrow {
+                    &::after {
+                        right: 5rem;
+
+                        @at-root [direction="rtl"]#{&} {
+                            right: auto;
+                            left: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-toggle {
+
+            .nav-header {
+                width: 17.1875rem;
+    
+                .brand-logo {
+                    padding-left: 1.6rem;
+    
+                    .logo-abbr {
+                        display: none;
+                    }
+    
+                    .brand-title {
+                        display: block;
+                    }
+                }
+            }
+    
+            .header {
+                padding-left: 17.1875rem;
+
+                @at-root [direction="rtl"]#{&} {
+                    padding-right: 17.1875rem;
+                    padding-left: 0.9375rem;
+                }
+            }
+
+            .quixnav {
+                left: 0;
+
+                @at-root [direction="rtl"]#{&} {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+
+        .content-body {
+            margin-left: 4.375rem;
+
+            @at-root [direction="rtl"]#{&} {
+                margin-left: 0;
+                margin-right: 4.375rem;
+            }
+        }
+
+        .footer {
+            padding-left: 4.375rem;
+
+            @at-root [direction="rtl"]#{&} {
+                margin-left: 0;
+                margin-right: 4.375rem;
+            }
+        }
+    }
+
+
+
+}

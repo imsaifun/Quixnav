@@ -4,7 +4,6 @@ Commands to make dist and ready to use
     => Before starting project
         1. npm install
         2. gulp build_plugins
-        3. gulp common_js
 
 
     => After project completion
@@ -12,12 +11,12 @@ Commands to make dist and ready to use
         
 */
 
+
 const gulp = require('gulp');
-const concat = require('gulp-concat');
 const autoprefixer = require('autoprefixer');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
-const sourcemaps = require('gulp-sourcemaps');
+const sourcemaps   = require('gulp-sourcemaps');
 
 
 // File Copy
@@ -26,15 +25,12 @@ gulp.task('build_plugins', function() {
     gulp.src('./node_modules/jquery/dist/jquery.min.js').pipe(gulp.dest('./src/assets/plugins/jquery/'));
 
     // Bootstrap
-    gulp.src('node_modules/bootstrap/scss/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap/scss/'));
-    gulp.src('node_modules/bootstrap/scss/mixins/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap/scss/mixins/'));
-    gulp.src('node_modules/bootstrap/scss/utilities/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap/scss/utilities/'));
-    gulp.src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js').pipe(gulp.dest('./src/assets/plugins/bootstrap/js/'));
+    gulp.src('node_modules/bootstrap/scss/**/*').pipe(gulp.dest('./src/assets/plugins/bootstrap/scss/'));
+    gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css').pipe(gulp.dest('./src/assets/plugins/bootstrap/dist/css/'));
+    gulp.src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js').pipe(gulp.dest('./src/assets/plugins/bootstrap/dist/js/'));
 
     // Bootstrap rtl
-    gulp.src('node_modules/bootstrap-v4-rtl/scss/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap-v4-rtl/scss/'));
-    gulp.src('node_modules/bootstrap-v4-rtl/scss/mixins/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap-v4-rtl/scss/mixins/'));
-    gulp.src('node_modules/bootstrap-v4-rtl/scss/utilities/*.scss').pipe(gulp.dest('./src/assets/plugins/bootstrap-v4-rtl/scss/utilities/'));
+    gulp.src('node_modules/bootstrap-v4-rtl/scss/**/*').pipe(gulp.dest('./src/assets/plugins/bootstrap-v4-rtl/scss/'));
 
     // Animate.css
     gulp.src('node_modules/animate.css/animate.min.css').pipe(gulp.dest('./src/assets/plugins/animate/'));
@@ -52,35 +48,24 @@ gulp.task('build_plugins', function() {
     gulp.src('./node_modules/highlightjs/highlight.pack.min.js').pipe(gulp.dest('./src/assets/plugins/highlightjs/'));
 });
 
-//make common js 
-gulp.task('common_js', function() {
-    return gulp.src(['./src/assets/plugins/jquery/jquery.min.js',
-            './src/assets/plugins/bootstrap/js/bootstrap.bundle.min.js',
-            './src/assets/plugins/metismenu/js/metisMenu.min.js',
-            './src/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js'
-        ])
-        .pipe(concat('common.min.js'))
-        .pipe(gulp.dest('./src/assets/plugins/common/'));
-});
-
 
 //prefix css for browser support
-// Set the browser that you want to support
-const AUTOPREFIXER_BROWSERS = [
-    'ie >= 10',
-    'ie_mob >= 10',
-    'ff >= 30',
-    'chrome >= 34',
-    'safari >= 7',
-    'opera >= 23',
-    'ios >= 7',
-    'android >= 4.4',
-    'bb >= 10'
-];
-
 gulp.task('prefix_css', function () {
+    // Set the browser that you want to have support
+    const AUTOPREFIXER_BROWSERS = [
+        'ie >= 10',
+        'ie_mob >= 10',
+        'ff >= 30',
+        'chrome >= 34',
+        'safari >= 7',
+        'opera >= 23',
+        'ios >= 7',
+        'android >= 4.4',
+        'bb >= 10'
+    ];
+    
     const plugins = [
-        autoprefixer({browsers: AUTOPREFIXER_BROWSERS}),
+        autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }),
         cssnano()
     ];
 
