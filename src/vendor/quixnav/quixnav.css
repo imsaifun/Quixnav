@@ -956,11 +956,16 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   [data-sidebar-style="icon-hover"][data-layout="vertical"] .quixnav {
     overflow: visible;
     position: absolute;
-    left: -205px;
-    z-index: 1; }
+    left: -12.8125rem;
+    z-index: 1; } }
+  @media only screen and (min-width: 767px) and (min-width: 1200px) and (max-width: 1350px) {
+    [data-sidebar-style="icon-hover"][data-layout="vertical"] .quixnav {
+      left: -10rem; } }
+
+@media (min-width: 767px) {
     [direction="rtl"][data-sidebar-style="icon-hover"][data-layout="vertical"] .quixnav {
       left: auto;
-      right: -205px; }
+      right: -12.8125rem; }
     [data-sidebar-style="icon-hover"][data-layout="vertical"] .quixnav .nav-label {
       display: none; }
     [data-sidebar-style="icon-hover"][data-layout="vertical"] .quixnav .metismenu > li > a {

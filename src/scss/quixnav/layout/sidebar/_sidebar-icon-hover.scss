@@ -33,12 +33,16 @@
         .quixnav {
             overflow: visible;
             position: absolute;
-            left: -205px;
+            left: -12.8125rem;
             z-index: 1;
+
+            @include custommq($min: 1200px, $max: 1350px) {
+                left: -10rem;
+            }
 
             @at-root [direction="rtl"]#{&} {
                 left: auto;
-                right: -205px;
+                right: -12.8125rem;
             }
 
             .nav-label {
