@@ -28,6 +28,7 @@
     "gulp-header-comment": "^0.4.0",
     "gulp-javascript-obfuscator": "^1.1.5",
     "gulp-postcss": "^8.0.0",
+    "gulp-remove-code": "^3.0.4",
     "gulp-sourcemaps": "^2.6.4",
     "node-sass": "^4.11.0",
     "run-sequence": "^2.2.1"

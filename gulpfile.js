@@ -20,6 +20,7 @@ const javascriptObfuscator = require('gulp-javascript-obfuscator');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const sourcemaps   = require('gulp-sourcemaps');
+const removeCode   = require('gulp-remove-code');
 
 
 // File Copy
@@ -164,6 +165,12 @@ function js_obfuscate() {
 
 };
 
+async function remove_html() {
+    src('./src/*.html')
+    .pipe(removeCode({ production: true }))
+    .pipe(dest('./package/QuixNav/src/'))
+}
+
 exports.build_plugins = build_plugins;
 exports.quixnav_js = quixnav_js;
 exports.copy_dist = copy_dist;
@@ -174,3 +181,4 @@ exports.js_comments = js_comments;
 exports.js_obfuscate = js_obfuscate;
 exports.add_comment = series(html_comments, css_comments);
 exports.build = series(copy_dist, make_package);
+exports.remove_html = remove_html;
