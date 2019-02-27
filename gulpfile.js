@@ -9,6 +9,7 @@ Commands to make dist and ready to use
 => After project completion
     1. gulp build && gulp add_comment
     2. gulp js_obfuscate
+    3. gulp remove_html
 */
 
 
