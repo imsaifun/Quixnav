@@ -89,13 +89,12 @@
          padding-left: 9.375rem;
      }
  }
-
- 
  
  [data-header-position="fixed"] {
     .header {
         position: fixed;
         top: 0;
+        width: 100%;
     }
     .content-body {
         padding-top: 5rem;

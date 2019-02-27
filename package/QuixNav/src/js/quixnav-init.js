@@ -22,7 +22,7 @@
         layout: "vertical", // "vertical" and "horizontal"
         navheaderBg: "color_1", // "color_1" to "color_10"
         headerBg: "color_1", // "color_1" to "color_10"
-        sidebarStyle: "modern", // "full", "compact", "mini" and "overlay", "modern"
+        sidebarStyle: "icon-hover", // "full", "compact", "mini" and "overlay", "modern", "icon-hover"
         sidebarBg: "color_1", // "color_1" to "color_10"
         sidebarPosition: "static", // have two options, "static" and "fixed"
         headerPosition: "static", // have two options, "static" and "fixed"

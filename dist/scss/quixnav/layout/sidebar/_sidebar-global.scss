@@ -153,9 +153,9 @@
                     background-color: lighten($color: $primary, $amount: 50%);
                     color: $primary;
 
-                    &::after {
-                        border-color: transparent transparent $primary transparent;
-                    }
+                    // &::after {
+                    //     border-color: blue;
+                    // }
                 }
             }
 
@@ -223,20 +223,16 @@
             &:after {
                 right: 1.5625rem;
                 top: 48%;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0 0 7px 7px;
-                border-color: transparent transparent rgba($color: $black, $alpha: .8) transparent;
+                border-color: inherit;
             }
         }
     }
 }
 
 
-.metismenu .mm-active>.has-arrow:after, .metismenu .has-arrow[aria-expanded=true]:after {
-    transform: rotate(45deg) translateY(-50%);
-}
+// .metismenu .mm-active>.has-arrow:after, .metismenu .has-arrow[aria-expanded=true]:after {
+//     transform: rotate(45deg) translateY(-50%);
+// }
 
 
 @media (max-width:767px) {

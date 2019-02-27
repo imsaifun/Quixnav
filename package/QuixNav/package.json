@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass-quixnav": "node-sass --watch src/scss/quixnav/main.scss src/vendor/quixnav/quixnav.css --source-map src/vendor/quixnav/quixnav.css.map",
-    "sass-project": "node-sass --watch src/scss/project/main.scss src/css/style.css --source-map src/css/style.css.map", 
+    "sass-project": "node-sass --watch src/scss/project/main.scss src/css/style.css --source-map src/css/style.css.map",
     "sass": "concurrently \"npm run sass-quixnav\" \"npm run sass-project\""
   },
   "repository": {
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "bootstrap-v4-rtl": "^4.1.1-1",
     "highlightjs": "^9.12.0",
     "jquery": "^3.3.1",

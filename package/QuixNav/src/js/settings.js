@@ -158,6 +158,18 @@ quixSettings.prototype.manageSidebarStyle = function() {
         case "modern":
             body.attr("data-sidebar-style", "modern");
             break;
+        case "icon-hover":
+            body.attr("data-sidebar-style", "icon-hover");
+
+            $('.quixnav').hover(function() {
+                if($('#main-wrapper').hasClass('menu-toggle')) {
+                    $('#main-wrapper').removeClass('menu-toggle');
+                } else {
+                    $('#main-wrapper').addClass('menu-toggle');
+                }                
+            });
+
+            break;
         case "overlay":
             this.layout === "horizontal" ? body.attr("data-sidebar-style", "full") : body.attr("data-sidebar-style", "overlay");
             break;
@@ -281,3 +293,5 @@ quixSettings.prototype.manageResponsiveSidebar = function() {
         body.attr("data-sidebar-style", "overlay");
     }
 }
+
+

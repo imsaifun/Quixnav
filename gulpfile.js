@@ -7,11 +7,8 @@ Commands to make dist and ready to use
 
 
 => After project completion
-    1. gulp copy_dist
-    2. gulp make_package
-    3. gulp add_comment
-    4. gulp js_obfuscate
-
+    1. gulp build && gulp add_comment
+    2. gulp js_obfuscate
 */
 
 
@@ -167,10 +164,6 @@ function js_obfuscate() {
 
 };
 
-function add_comment() {
-    return series(html_comments, css_comments);
-}
-
 exports.build_plugins = build_plugins;
 exports.quixnav_js = quixnav_js;
 exports.copy_dist = copy_dist;
@@ -179,4 +172,5 @@ exports.html_comments = html_comments;
 exports.css_comments = css_comments;
 exports.js_comments = js_comments;
 exports.js_obfuscate = js_obfuscate;
-exports.add_comment = add_comment;
+exports.add_comment = series(html_comments, css_comments);
+exports.build = series(copy_dist, make_package);

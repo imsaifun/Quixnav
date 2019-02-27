@@ -32,7 +32,7 @@
                     border-color: lighten($color: $color, $amount: 10%);
                     background-color: lighten($color: $color, $amount: 10%);
                     color: $white;
-                    border-right-color: transparent;
+                    // border-right-color: transparent;
 
                     &::placeholder {
                         color: $white;
@@ -94,9 +94,9 @@
                                 background-color: $color;
                                 color: $white;
             
-                                &::after {
-                                    border-color: transparent transparent $white transparent;
-                                }
+                                // &::after {
+                                //     border-color: transparent transparent $white transparent;
+                                // }
                             }
                         }
 
@@ -121,11 +121,11 @@
                         background-color: darken($color: $color, $amount: 10%);
                     }
 
-                    .has-arrow {
-                        &:after {
-                            border-color: transparent transparent darken($color: $white, $amount: 30%) transparent;
-                        }
-                    }
+                    // .has-arrow {
+                    //     &:after {
+                    //         border-color: transparent transparent darken($color: $white, $amount: 30%) transparent;
+                    //     }
+                    // }
                 }
             }
         } 
