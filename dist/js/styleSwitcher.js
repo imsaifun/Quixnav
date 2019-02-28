@@ -1,1 +1,144 @@
-var _0x2cf9=['slimscroll','right','5px','100%','transparent','.quixnav-scroll','data-header-position','dir','addClass','direction','full','boxed','vertical','overlay','horizontal','Sorry!\x20Overlay\x20is\x20not\x20possible\x20in\x20Horizontal\x20layout.','data-container','Sorry!\x20Full\x20menu\x20is\x20not\x20available\x20in\x20Vertical\x20Boxed\x20layout.','Sorry!\x20Modern\x20sidebar\x20layout\x20is\x20not\x20available\x20in\x20the\x20fixed\x20position.\x20Please\x20change\x20the\x20sidebar\x20position\x20into\x20Static.','icon-hover','.quixnav','#main-wrapper','icon-hover-toggle','input[name=\x22navigation_header\x22]','click','input[name=\x22header_bg\x22]','input[name=\x22sidebar_bg\x22]','data-sibebarbg','#theme_version','#sidebar_position','#header_position','#container_layout','change','attr','data-theme-version','value','fixed','data-sidebar-style','modern','data-layout','data-sidebar-position'];(function(_0x2c894c,_0x58cb86){var _0x40ff6f=function(_0x549284){while(--_0x549284){_0x2c894c['push'](_0x2c894c['shift']());}};_0x40ff6f(++_0x58cb86);}(_0x2cf9,0x6e));var _0x5108=function(_0x3ebd15,_0x49a61c){_0x3ebd15=_0x3ebd15-0x0;var _0xe46f04=_0x2cf9[_0x3ebd15];return _0xe46f04;};(function(_0x501e82){'use strict';const _0x5b6c40=_0x501e82('body');const _0x5b08bd=_0x501e82('html');const _0x11657b=_0x501e82(_0x5108('0x0'));const _0x2ad2ff=_0x501e82('#theme_layout');const _0x425aa0=_0x501e82('#sidebar_style');const _0x4e130a=_0x501e82(_0x5108('0x1'));const _0x46f3fa=_0x501e82(_0x5108('0x2'));const _0x58157c=_0x501e82(_0x5108('0x3'));const _0x4086cd=_0x501e82('#theme_direction');_0x11657b['on'](_0x5108('0x4'),function(){_0x5b6c40[_0x5108('0x5')](_0x5108('0x6'),this[_0x5108('0x7')]);});_0x4e130a['on'](_0x5108('0x4'),function(){this['value']===_0x5108('0x8')&&_0x5b6c40['attr'](_0x5108('0x9'))===_0x5108('0xa')&&_0x5b6c40['attr'](_0x5108('0xb'))==='vertical'?alert('Sorry,\x20Modern\x20sidebar\x20layout\x20dosen\x27t\x20support\x20fixed\x20position!'):_0x5b6c40['attr'](_0x5108('0xc'),this[_0x5108('0x7')]);if(_0x5b6c40['attr'](_0x5108('0xc'))==='fixed'){_0x501e82('.quixnav-scroll')[_0x5108('0xd')]({'position':_0x5108('0xe'),'size':_0x5108('0xf'),'height':_0x5108('0x10'),'color':_0x5108('0x11')});}else{_0x501e82(_0x5108('0x12'))[_0x5108('0xd')]({'destroy':!![]});}});_0x46f3fa['on']('change',function(){_0x5b6c40[_0x5108('0x5')](_0x5108('0x13'),this[_0x5108('0x7')]);});_0x4086cd['on'](_0x5108('0x4'),function(){_0x5b08bd[_0x5108('0x5')](_0x5108('0x14'),this[_0x5108('0x7')]);_0x5b08bd[_0x5108('0x5')]('class','');_0x5b08bd[_0x5108('0x15')](this[_0x5108('0x7')]);_0x5b6c40[_0x5108('0x5')](_0x5108('0x16'),this[_0x5108('0x7')]);});_0x2ad2ff['on']('change',function(){if(_0x5b6c40['attr'](_0x5108('0x9'))==='overlay'){_0x5b6c40['attr'](_0x5108('0x9'),_0x5108('0x17'));_0x5b6c40[_0x5108('0x5')](_0x5108('0xb'),this[_0x5108('0x7')]);return;}_0x5b6c40[_0x5108('0x5')](_0x5108('0xb'),this[_0x5108('0x7')]);});_0x58157c['on'](_0x5108('0x4'),function(){if(this['value']===_0x5108('0x18')){if(_0x5b6c40[_0x5108('0x5')]('data-layout')===_0x5108('0x19')&&_0x5b6c40[_0x5108('0x5')](_0x5108('0x9'))==='full'){_0x5b6c40[_0x5108('0x5')](_0x5108('0x9'),_0x5108('0x1a'));_0x5b6c40[_0x5108('0x5')]('data-container',this[_0x5108('0x7')]);return;}}_0x5b6c40[_0x5108('0x5')]('data-container',this[_0x5108('0x7')]);});_0x425aa0['on'](_0x5108('0x4'),function(){if(_0x5b6c40[_0x5108('0x5')](_0x5108('0xb'))===_0x5108('0x1b')){if(this['value']==='overlay'){alert(_0x5108('0x1c'));return;}}if(_0x5b6c40['attr'](_0x5108('0xb'))==='vertical'){if(_0x5b6c40[_0x5108('0x5')](_0x5108('0x1d'))===_0x5108('0x18')&&this[_0x5108('0x7')]===_0x5108('0x17')){alert(_0x5108('0x1e'));return;}if(this[_0x5108('0x7')]===_0x5108('0xa')&&_0x5b6c40[_0x5108('0x5')](_0x5108('0xc'))===_0x5108('0x8')){alert(_0x5108('0x1f'));return;}}_0x5b6c40[_0x5108('0x5')]('data-sidebar-style',this[_0x5108('0x7')]);if(_0x5b6c40['attr'](_0x5108('0x9'))===_0x5108('0x20')){_0x501e82(_0x5108('0x21'))['hover'](function(){_0x501e82(_0x5108('0x22'))[_0x5108('0x15')](_0x5108('0x23'));},function(){_0x501e82(_0x5108('0x22'))['removeClass']('icon-hover-toggle');});}});_0x501e82(_0x5108('0x24'))['on'](_0x5108('0x25'),function(){_0x5b6c40['attr']('data-nav-headerbg',this[_0x5108('0x7')]);});_0x501e82(_0x5108('0x26'))['on']('click',function(){_0x5b6c40[_0x5108('0x5')]('data-headerbg',this[_0x5108('0x7')]);});_0x501e82(_0x5108('0x27'))['on']('click',function(){_0x5b6c40['attr'](_0x5108('0x28'),this['value']);});}(jQuery));
+/**
+ * **************************************************
+ * ******* Name: quixnav
+ * ******* Description: A whole navigation for admin dashboard
+ * ******* Version: 1.0.0
+ * ******* Released on 2019-02-13 12:10:02
+ * ******* Support Email :
+ * ******* Support Skype :
+ * ******* Development/Code Author:
+ * ******* Author URL:
+ * ******* Themeforest URL (Development):
+ * ******* Design Author:
+ * ******* License: ISC
+ * ***************************************************
+ */
+
+(function($) {
+    "use strict"
+
+    const body = $('body');
+    const html = $('html');
+
+    //get the DOM elements from right sidebar
+    const versionSelect = $('#theme_version');
+    const layoutSelect = $('#theme_layout');
+    const sidebarStyleSelect = $('#sidebar_style');
+    const sidebarPositionSelect = $('#sidebar_position');
+    const headerPositionSelect = $('#header_position');
+    const containerLayoutSelect = $('#container_layout');
+    const themeDirectionSelect = $('#theme_direction');
+
+    //change the theme version controller
+    versionSelect.on('change', function() {
+        body.attr('data-theme-version', this.value);
+    });
+
+    //change the sidebar position controller
+    sidebarPositionSelect.on('change', function() {
+        this.value === "fixed" && body.attr('data-sidebar-style') === "modern" && body.attr('data-layout') === "vertical" ? 
+        alert("Sorry, Modern sidebar layout dosen't support fixed position!") :
+        body.attr('data-sidebar-position', this.value);
+
+        if(body.attr('data-sidebar-position') === "fixed") {
+            $('.quixnav-scroll').slimscroll({
+                position: "right",
+                size: "5px",
+                height: "100%",
+                color: "transparent"
+            })
+        } else {
+            $('.quixnav-scroll').slimscroll({
+                destroy: true
+            })
+        }
+    });
+
+    //change the header position controller
+    headerPositionSelect.on('change', function() {
+        body.attr('data-header-position', this.value);
+    });
+
+    //change the theme direction (rtl, ltr) controller
+    themeDirectionSelect.on('change', function() {
+        html.attr('dir', this.value);
+        html.attr('class', '');
+        html.addClass(this.value);
+        body.attr('direction', this.value);
+    });
+
+    //change the theme layout controller
+    layoutSelect.on('change', function() {
+        if(body.attr('data-sidebar-style') === 'overlay') {
+            body.attr('data-sidebar-style', 'full');
+            body.attr('data-layout', this.value);
+            return;
+        }
+
+        body.attr('data-layout', this.value);
+    });
+
+    //change the container layout controller
+    containerLayoutSelect.on('change', function() {
+        if(this.value === "boxed") {
+
+            if(body.attr('data-layout') === "vertical" && body.attr('data-sidebar-style') === "full") {
+                body.attr('data-sidebar-style', 'overlay');
+                body.attr('data-container', this.value);
+                return;
+            }
+        }
+
+        body.attr('data-container', this.value);
+    });
+
+    //change the sidebar style controller
+    sidebarStyleSelect.on('change', function() {
+        if(body.attr('data-layout') === "horizontal") {
+            if(this.value === "overlay") {
+                alert("Sorry! Overlay is not possible in Horizontal layout.");
+                return;
+            }
+        }
+
+        if(body.attr('data-layout') === "vertical") {
+            if(body.attr('data-container') === "boxed" && this.value === "full") {
+                alert("Sorry! Full menu is not available in Vertical Boxed layout.");
+                return;
+            }
+
+            if(this.value === "modern" && body.attr('data-sidebar-position') === "fixed") {
+                alert("Sorry! Modern sidebar layout is not available in the fixed position. Please change the sidebar position into Static.");
+                return;
+            }
+        }
+
+        body.attr('data-sidebar-style', this.value);
+
+        if(body.attr('data-sidebar-style') === 'icon-hover') {
+            $('.quixnav').hover(function() {
+                $('#main-wrapper').addClass('icon-hover-toggle');
+            }, function() {
+                $('#main-wrapper').removeClass('icon-hover-toggle');
+            });
+        }
+    });
+
+    //change the nav-header background controller
+    $('input[name="navigation_header"]').on('click', function() {
+        body.attr('data-nav-headerbg', this.value);
+    });
+
+    //change the header background controller
+    $('input[name="header_bg"]').on('click', function() {
+        body.attr('data-headerbg', this.value);
+    });
+
+    //change the sidebar background controller
+    $('input[name="sidebar_bg"]').on('click', function() {
+        body.attr('data-sibebarbg', this.value);
+    });
+
+})(jQuery);
+
+

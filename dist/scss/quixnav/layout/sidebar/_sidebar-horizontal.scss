@@ -335,4 +335,12 @@
         }
     }
 
+    [data-sidebar-position="fixed"][data-layout="horizontal"] {
+        .quixnav.fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    }
+
 }

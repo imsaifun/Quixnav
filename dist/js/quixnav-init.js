@@ -1,1 +1,34 @@
-var _0x4607=['vertical','color_1','icon-hover','static','wide','ltr','light'];(function(_0x4aee4f,_0x1e8153){var _0x1082ff=function(_0x360e71){while(--_0x360e71){_0x4aee4f['push'](_0x4aee4f['shift']());}};_0x1082ff(++_0x1e8153);}(_0x4607,0xe6));var _0x117d=function(_0x5b9444,_0x215570){_0x5b9444=_0x5b9444-0x0;var _0x1a0e17=_0x4607[_0x5b9444];return _0x1a0e17;};(function(_0x4de53f){'use strict';new quixSettings({'version':_0x117d('0x0'),'layout':_0x117d('0x1'),'navheaderBg':_0x117d('0x2'),'headerBg':'color_1','sidebarStyle':_0x117d('0x3'),'sidebarBg':'color_1','sidebarPosition':_0x117d('0x4'),'headerPosition':_0x117d('0x4'),'containerLayout':_0x117d('0x5'),'direction':_0x117d('0x6')});}(jQuery));
+/**
+ * **************************************************
+ * ******* Name: quixnav
+ * ******* Description: A whole navigation for admin dashboard
+ * ******* Version: 1.0.0
+ * ******* Released on 2019-02-13 12:10:02
+ * ******* Support Email :
+ * ******* Support Skype :
+ * ******* Development/Code Author:
+ * ******* Author URL:
+ * ******* Themeforest URL (Development):
+ * ******* Design Author:
+ * ******* License: ISC
+ * ***************************************************
+ */
+
+(function($) {
+    "use strict"
+
+    new quixSettings({
+        version: "light", // "light" and "dark"
+        layout: "vertical", // "vertical" and "horizontal"
+        navheaderBg: "color_1", // "color_1" to "color_10"
+        headerBg: "color_1", // "color_1" to "color_10"
+        sidebarStyle: "icon-hover", // "full", "compact", "mini" and "overlay", "modern", "icon-hover"
+        sidebarBg: "color_1", // "color_1" to "color_10"
+        sidebarPosition: "static", // have two options, "static" and "fixed"
+        headerPosition: "static", // have two options, "static" and "fixed"
+        containerLayout: "wide",  // "boxed" and  "wide", "wide-boxed"
+        direction: "ltr" // "ltr", "rtl"
+    });
+
+
+})(jQuery);

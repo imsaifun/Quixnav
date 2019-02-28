@@ -1,1 +1,295 @@
-var _0x5ec7=['color_1','headerBg','sidebarPosition','headerPosition','containerLayout','direction','ltr','manageVersion','manageLayout','manageNavHeaderBg','manageHeaderBg','manageSidebarStyle','manageSidebarBg','manageSidebarPosition','manageHeaderPosition','manageContainerLayout','manageRtlLayout','manageResponsiveSidebar','prototype','attr','data-theme-version','light','dark','overlay','data-sidebar-style','full','sidebarStyle','data-layout','data-nav-headerbg','color_2','color_3','color_4','color_5','color_6','color_7','color_8','color_9','color_10','data-headerbg','compact','icon-hover','hover','#main-wrapper','addClass','icon-hover-toggle','removeClass','horizontal','sidebarBg','data-sibebarbg','modern','data-sidebar-position','static','fixed','data-header-position','boxed','data-container','wide','wide-boxed','dir','rtl','innerWidth','mini','html','version','layout','vertical','navheaderBg'];(function(_0x16f789,_0x37d843){var _0x1f187f=function(_0x4b1352){while(--_0x4b1352){_0x16f789['push'](_0x16f789['shift']());}};_0x1f187f(++_0x37d843);}(_0x5ec7,0xc4));var _0x3820=function(_0x3f1e87,_0x12aa9b){_0x3f1e87=_0x3f1e87-0x0;var _0x4008b0=_0x5ec7[_0x3f1e87];return _0x4008b0;};var body=$('body');var html=$(_0x3820('0x0'));function quixSettings({version,layout,navheaderBg,headerBg,sidebarStyle,sidebarBg,sidebarPosition,headerPosition,containerLayout,direction}){this[_0x3820('0x1')]=version||'light';this[_0x3820('0x2')]=layout||_0x3820('0x3');this[_0x3820('0x4')]=navheaderBg||_0x3820('0x5');this[_0x3820('0x6')]=headerBg||'color_1';this['sidebarStyle']=sidebarStyle||'full';this['sidebarBg']=sidebarBg||'color_1';this[_0x3820('0x7')]=sidebarPosition||'static';this[_0x3820('0x8')]=headerPosition||'static';this[_0x3820('0x9')]=containerLayout||'wide';this[_0x3820('0xa')]=direction||_0x3820('0xb');this[_0x3820('0xc')]();this[_0x3820('0xd')]();this[_0x3820('0xe')]();this[_0x3820('0xf')]();this[_0x3820('0x10')]();this[_0x3820('0x11')]();this[_0x3820('0x12')]();this[_0x3820('0x13')]();this[_0x3820('0x14')]();this[_0x3820('0x15')]();this[_0x3820('0x16')]();}quixSettings[_0x3820('0x17')][_0x3820('0xc')]=function(){switch(this[_0x3820('0x1')]){case'light':body[_0x3820('0x18')](_0x3820('0x19'),_0x3820('0x1a'));break;case _0x3820('0x1b'):body[_0x3820('0x18')](_0x3820('0x19'),_0x3820('0x1b'));break;default:body[_0x3820('0x18')]('data-theme-version',_0x3820('0x1a'));}};quixSettings['prototype'][_0x3820('0xd')]=function(){switch(this[_0x3820('0x2')]){case'horizontal':this['sidebarStyle']===_0x3820('0x1c')?body['attr'](_0x3820('0x1d'),_0x3820('0x1e')):body['attr'](_0x3820('0x1d'),''+this[_0x3820('0x1f')]);body[_0x3820('0x18')](_0x3820('0x20'),'horizontal');break;case _0x3820('0x3'):body[_0x3820('0x18')](_0x3820('0x20'),_0x3820('0x3'));break;default:body[_0x3820('0x18')](_0x3820('0x20'),_0x3820('0x3'));}};quixSettings[_0x3820('0x17')][_0x3820('0xe')]=function(){switch(this[_0x3820('0x4')]){case _0x3820('0x5'):body['attr'](_0x3820('0x21'),'color_1');break;case _0x3820('0x22'):body[_0x3820('0x18')](_0x3820('0x21'),_0x3820('0x22'));break;case _0x3820('0x23'):body[_0x3820('0x18')](_0x3820('0x21'),_0x3820('0x23'));break;case _0x3820('0x24'):body['attr'](_0x3820('0x21'),_0x3820('0x24'));break;case _0x3820('0x25'):body[_0x3820('0x18')]('data-nav-headerbg',_0x3820('0x25'));break;case _0x3820('0x26'):body['attr'](_0x3820('0x21'),'color_6');break;case'color_7':body[_0x3820('0x18')](_0x3820('0x21'),_0x3820('0x27'));break;case _0x3820('0x28'):body['attr'](_0x3820('0x21'),'color_8');break;case _0x3820('0x29'):body[_0x3820('0x18')]('data-nav-headerbg',_0x3820('0x29'));break;case _0x3820('0x2a'):body[_0x3820('0x18')]('data-nav-headerbg',_0x3820('0x2a'));break;default:body['attr'](_0x3820('0x21'),'color_1');}};quixSettings[_0x3820('0x17')][_0x3820('0xf')]=function(){switch(this[_0x3820('0x6')]){case _0x3820('0x5'):body[_0x3820('0x18')](_0x3820('0x2b'),'color_1');break;case _0x3820('0x22'):body[_0x3820('0x18')]('data-headerbg',_0x3820('0x22'));break;case _0x3820('0x23'):body[_0x3820('0x18')]('data-headerbg',_0x3820('0x23'));break;case _0x3820('0x24'):body[_0x3820('0x18')](_0x3820('0x2b'),'color_4');break;case _0x3820('0x25'):body['attr'](_0x3820('0x2b'),'color_5');break;case'color_6':body[_0x3820('0x18')]('data-headerbg',_0x3820('0x26'));break;case'color_7':body['attr']('data-headerbg',_0x3820('0x27'));break;case _0x3820('0x28'):body['attr'](_0x3820('0x2b'),'color_8');break;case'color_9':body[_0x3820('0x18')](_0x3820('0x2b'),_0x3820('0x29'));break;case _0x3820('0x2a'):body[_0x3820('0x18')](_0x3820('0x2b'),_0x3820('0x2a'));break;default:body['attr'](_0x3820('0x2b'),'color_1');}};quixSettings['prototype'][_0x3820('0x10')]=function(){switch(this[_0x3820('0x1f')]){case _0x3820('0x1e'):body[_0x3820('0x18')](_0x3820('0x1d'),_0x3820('0x1e'));break;case'mini':body[_0x3820('0x18')](_0x3820('0x1d'),'mini');break;case _0x3820('0x2c'):body[_0x3820('0x18')](_0x3820('0x1d'),_0x3820('0x2c'));break;case'modern':body['attr'](_0x3820('0x1d'),'modern');break;case _0x3820('0x2d'):body['attr'](_0x3820('0x1d'),'icon-hover');$('.quixnav')[_0x3820('0x2e')](function(){$(_0x3820('0x2f'))[_0x3820('0x30')](_0x3820('0x31'));},function(){$('#main-wrapper')[_0x3820('0x32')](_0x3820('0x31'));});break;case _0x3820('0x1c'):this[_0x3820('0x2')]===_0x3820('0x33')?body[_0x3820('0x18')](_0x3820('0x1d'),_0x3820('0x1e')):body[_0x3820('0x18')](_0x3820('0x1d'),_0x3820('0x1c'));break;default:body[_0x3820('0x18')](_0x3820('0x1d'),'full');}};quixSettings[_0x3820('0x17')][_0x3820('0x11')]=function(){switch(this[_0x3820('0x34')]){case'color_1':body[_0x3820('0x18')](_0x3820('0x35'),'color_1');break;case _0x3820('0x22'):body[_0x3820('0x18')](_0x3820('0x35'),'color_2');break;case _0x3820('0x23'):body[_0x3820('0x18')](_0x3820('0x35'),'color_3');break;case _0x3820('0x24'):body['attr']('data-sibebarbg','color_4');break;case'color_5':body[_0x3820('0x18')](_0x3820('0x35'),'color_5');break;case _0x3820('0x26'):body['attr'](_0x3820('0x35'),_0x3820('0x26'));break;case _0x3820('0x27'):body['attr'](_0x3820('0x35'),_0x3820('0x27'));break;case'color_8':body[_0x3820('0x18')]('data-sibebarbg','color_8');break;case _0x3820('0x29'):body[_0x3820('0x18')](_0x3820('0x35'),_0x3820('0x29'));break;case'color_10':body[_0x3820('0x18')](_0x3820('0x35'),_0x3820('0x2a'));break;default:body[_0x3820('0x18')](_0x3820('0x35'),_0x3820('0x5'));}};quixSettings[_0x3820('0x17')][_0x3820('0x12')]=function(){switch(this[_0x3820('0x7')]){case'fixed':this[_0x3820('0x1f')]==='overlay'&&this['layout']==='vertical'||this[_0x3820('0x1f')]===_0x3820('0x36')?body[_0x3820('0x18')](_0x3820('0x37'),_0x3820('0x38')):body[_0x3820('0x18')](_0x3820('0x37'),_0x3820('0x39'));break;case'static':body[_0x3820('0x18')]('data-sidebar-position',_0x3820('0x38'));break;default:body[_0x3820('0x18')](_0x3820('0x37'),'static');}};quixSettings['prototype']['manageHeaderPosition']=function(){switch(this[_0x3820('0x8')]){case _0x3820('0x39'):body[_0x3820('0x18')]('data-header-position',_0x3820('0x39'));break;case _0x3820('0x38'):body[_0x3820('0x18')](_0x3820('0x3a'),_0x3820('0x38'));break;default:body[_0x3820('0x18')](_0x3820('0x3a'),'static');}};quixSettings[_0x3820('0x17')]['manageContainerLayout']=function(){switch(this[_0x3820('0x9')]){case _0x3820('0x3b'):if(this[_0x3820('0x2')]===_0x3820('0x3')&&this[_0x3820('0x1f')]===_0x3820('0x1e')){body[_0x3820('0x18')](_0x3820('0x1d'),_0x3820('0x1c'));}body[_0x3820('0x18')](_0x3820('0x3c'),_0x3820('0x3b'));break;case _0x3820('0x3d'):body[_0x3820('0x18')](_0x3820('0x3c'),_0x3820('0x3d'));break;case _0x3820('0x3e'):body[_0x3820('0x18')](_0x3820('0x3c'),'wide-boxed');break;default:body[_0x3820('0x18')](_0x3820('0x3c'),_0x3820('0x3d'));}};quixSettings[_0x3820('0x17')][_0x3820('0x15')]=function(){switch(this[_0x3820('0xa')]){case'rtl':html[_0x3820('0x18')](_0x3820('0x3f'),_0x3820('0x40'));html['addClass']('rtl');body[_0x3820('0x18')](_0x3820('0xa'),_0x3820('0x40'));break;case _0x3820('0xb'):html[_0x3820('0x18')](_0x3820('0x3f'),_0x3820('0xb'));html[_0x3820('0x32')](_0x3820('0x40'));body[_0x3820('0x18')](_0x3820('0xa'),_0x3820('0xb'));break;default:html[_0x3820('0x18')](_0x3820('0x3f'),'ltr');body[_0x3820('0x18')](_0x3820('0xa'),'ltr');}};quixSettings[_0x3820('0x17')][_0x3820('0x16')]=function(){const _0x3eb0ea=$(window)[_0x3820('0x41')]();if(_0x3eb0ea<0x4b0){body[_0x3820('0x18')](_0x3820('0x20'),_0x3820('0x3'));body['attr'](_0x3820('0x3c'),_0x3820('0x3d'));}if(_0x3eb0ea>0x2ff&&_0x3eb0ea<0x4b0){body[_0x3820('0x18')]('data-sidebar-style',_0x3820('0x42'));}if(_0x3eb0ea<0x300){body[_0x3820('0x18')](_0x3820('0x1d'),_0x3820('0x1c'));}};
+/**
+ * **************************************************
+ * ******* Name: quixnav
+ * ******* Description: A whole navigation for admin dashboard
+ * ******* Version: 1.0.0
+ * ******* Released on 2019-02-13 12:10:02
+ * ******* Support Email :
+ * ******* Support Skype :
+ * ******* Development/Code Author:
+ * ******* Author URL:
+ * ******* Themeforest URL (Development):
+ * ******* Design Author:
+ * ******* License: ISC
+ * ***************************************************
+ */
+
+var body = $('body');
+var html = $('html');
+
+function quixSettings({version, layout, navheaderBg, headerBg, sidebarStyle, sidebarBg, sidebarPosition, headerPosition, containerLayout, direction}) {
+    this.version = version || "light";
+    this.layout = layout || "vertical";
+    this.navheaderBg = navheaderBg || "color_1";
+    this.headerBg = headerBg || "color_1";
+    this.sidebarStyle = sidebarStyle || "full";
+    this.sidebarBg = sidebarBg || "color_1";
+    this.sidebarPosition = sidebarPosition || "static";
+    this.headerPosition = headerPosition || "static";
+    this.containerLayout = containerLayout || "wide";
+    this.direction = direction || "ltr";
+
+    this.manageVersion();
+    this.manageLayout();
+    this.manageNavHeaderBg();
+    this.manageHeaderBg();
+    this.manageSidebarStyle();
+    this.manageSidebarBg();
+    this.manageSidebarPosition();
+    this.manageHeaderPosition();
+    this.manageContainerLayout();
+    this.manageRtlLayout();
+    this.manageResponsiveSidebar();
+
+}
+
+quixSettings.prototype.manageVersion = function() {
+    switch(this.version) {
+        case "light": 
+            body.attr("data-theme-version", "light");
+            break;
+        case "dark": 
+            body.attr("data-theme-version", "dark");
+            break;
+        default: 
+            body.attr("data-theme-version", "light");
+    }
+}
+
+quixSettings.prototype.manageLayout = function() {
+    switch(this.layout) {
+        case "horizontal": 
+            this.sidebarStyle === "overlay" ? body.attr("data-sidebar-style", "full") : body.attr("data-sidebar-style", `${this.sidebarStyle}`);
+            body.attr("data-layout", "horizontal");
+            break;
+        case "vertical": 
+            body.attr("data-layout", "vertical");
+            break;
+        default:
+            body.attr("data-layout", "vertical");
+    }
+}
+
+quixSettings.prototype.manageNavHeaderBg = function() {
+    switch(this.navheaderBg) {
+        case "color_1": 
+            body.attr("data-nav-headerbg", "color_1");
+            break;
+        case "color_2": 
+            body.attr("data-nav-headerbg", "color_2");
+            break;
+        case "color_3": 
+            body.attr("data-nav-headerbg", "color_3");
+            break;
+        case "color_4": 
+            body.attr("data-nav-headerbg", "color_4");
+            break;
+        case "color_5": 
+            body.attr("data-nav-headerbg", "color_5");
+            break;
+        case "color_6": 
+            body.attr("data-nav-headerbg", "color_6");
+            break;
+        case "color_7": 
+            body.attr("data-nav-headerbg", "color_7");
+            break;
+        case "color_8": 
+            body.attr("data-nav-headerbg", "color_8");
+            break;
+        case "color_9": 
+            body.attr("data-nav-headerbg", "color_9");
+            break;
+        case "color_10": 
+            body.attr("data-nav-headerbg", "color_10");
+            break;
+        default:
+            body.attr("data-nav-headerbg", "color_1");
+    }
+}
+
+quixSettings.prototype.manageHeaderBg = function() {
+    switch(this.headerBg) {
+        case "color_1": 
+            body.attr("data-headerbg", "color_1");
+            break;
+        case "color_2": 
+            body.attr("data-headerbg", "color_2");
+            break;
+        case "color_3": 
+            body.attr("data-headerbg", "color_3");
+            break;
+        case "color_4": 
+            body.attr("data-headerbg", "color_4");
+            break;
+        case "color_5": 
+            body.attr("data-headerbg", "color_5");
+            break;
+        case "color_6": 
+            body.attr("data-headerbg", "color_6");
+            break;
+        case "color_7": 
+            body.attr("data-headerbg", "color_7");
+            break;
+        case "color_8": 
+            body.attr("data-headerbg", "color_8");
+            break;
+        case "color_9": 
+            body.attr("data-headerbg", "color_9");
+            break;
+        case "color_10": 
+            body.attr("data-headerbg", "color_10");
+            break;
+        default:
+            body.attr("data-headerbg", "color_1");
+    }
+}
+
+quixSettings.prototype.manageSidebarStyle = function() {
+
+    switch(this.sidebarStyle) {
+        case "full":
+            body.attr("data-sidebar-style", "full");
+            break;
+        case "mini":
+            body.attr("data-sidebar-style", "mini");
+            break;
+        case "compact":
+            body.attr("data-sidebar-style", "compact");
+            break;
+        case "modern":
+            body.attr("data-sidebar-style", "modern");
+            break;
+        case "icon-hover":
+            body.attr("data-sidebar-style", "icon-hover");
+    
+            $('.quixnav').hover(function() {
+                $('#main-wrapper').addClass('icon-hover-toggle');
+            }, function() {
+                $('#main-wrapper').removeClass('icon-hover-toggle');
+            });            
+            break;
+        case "overlay":
+            this.layout === "horizontal" ? body.attr("data-sidebar-style", "full") : body.attr("data-sidebar-style", "overlay");
+            break;
+        default:
+            body.attr("data-sidebar-style", "full");
+    }
+}
+
+quixSettings.prototype.manageSidebarBg = function() {
+    switch(this.sidebarBg) {
+        case "color_1": 
+            body.attr("data-sibebarbg", "color_1");
+            break;
+        case "color_2": 
+            body.attr("data-sibebarbg", "color_2");
+            break;
+        case "color_3": 
+            body.attr("data-sibebarbg", "color_3");
+            break;
+        case "color_4": 
+            body.attr("data-sibebarbg", "color_4");
+            break;
+        case "color_5": 
+            body.attr("data-sibebarbg", "color_5");
+            break;
+        case "color_6": 
+            body.attr("data-sibebarbg", "color_6");
+            break;
+        case "color_7": 
+            body.attr("data-sibebarbg", "color_7");
+            break;
+        case "color_8": 
+            body.attr("data-sibebarbg", "color_8");
+            break;
+        case "color_9": 
+            body.attr("data-sibebarbg", "color_9");
+            break;
+        case "color_10": 
+            body.attr("data-sibebarbg", "color_10");
+            break;
+        default:
+            body.attr("data-sibebarbg", "color_1");
+    }
+}
+
+quixSettings.prototype.manageSidebarPosition = function() {
+    switch(this.sidebarPosition) {
+        case "fixed": 
+            this.sidebarStyle === "overlay" && this.layout === "vertical" || this.sidebarStyle === "modern" ? body.attr("data-sidebar-position", "static") : body.attr("data-sidebar-position", "fixed");
+            break;
+        case "static": 
+            body.attr("data-sidebar-position", "static");
+            break;
+        default: 
+            body.attr("data-sidebar-position", "static");       
+    }
+}
+
+quixSettings.prototype.manageHeaderPosition = function() {
+    switch(this.headerPosition) {
+        case "fixed": 
+            body.attr("data-header-position", "fixed");
+            break;
+        case "static": 
+            body.attr("data-header-position", "static");
+            break;
+        default: 
+            body.attr("data-header-position", "static");       
+    }
+}
+
+quixSettings.prototype.manageContainerLayout = function() {
+    switch(this.containerLayout) {
+        case "boxed":
+            if(this.layout === "vertical" && this.sidebarStyle === "full") {
+                body.attr("data-sidebar-style", "overlay");
+            }
+            body.attr("data-container", "boxed");
+            break;
+        case "wide":
+            body.attr("data-container", "wide");
+            break;
+        case "wide-boxed": 
+            body.attr("data-container", "wide-boxed");
+            break;
+        default:
+            body.attr("data-container", "wide");
+    }
+}
+
+quixSettings.prototype.manageRtlLayout = function() {
+    switch(this.direction) {
+        case "rtl":
+            html.attr("dir", "rtl");
+            html.addClass('rtl');
+            body.attr("direction", "rtl");
+            break;
+        case "ltr": 
+            html.attr("dir", "ltr");
+            html.removeClass('rtl');
+            body.attr("direction", "ltr");
+            break;
+        default: 
+            html.attr("dir", "ltr");
+            body.attr("direction", "ltr");
+    }
+}
+
+quixSettings.prototype.manageResponsiveSidebar = function() {
+    const innerWidth = $(window).innerWidth();
+    if(innerWidth < 1200) {
+        body.attr("data-layout", "vertical");
+        body.attr("data-container", "wide");
+    }
+
+    if(innerWidth > 767 && innerWidth < 1200) {
+        body.attr("data-sidebar-style", "mini");
+    }
+
+    if(innerWidth < 768) {
+        body.attr("data-sidebar-style", "overlay");
+    }
+}
+
+

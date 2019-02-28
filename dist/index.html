@@ -3,7 +3,7 @@
  // ******* Name: quixnav
  // ******* Description: A whole navigation for admin dashboard
  // ******* Version: 1.0.0
- // ******* Released on 2019-02-27 19:26:19
+ // ******* Released on 2019-02-28 17:21:43
  // ******* Support Email :
  // ******* Support Skype :
  // ******* Development/Code Author:
@@ -377,7 +377,7 @@
             Footer end
         ***********************************-->
 
-        
+        <!--removeIf(production)-->
         <!--**********************************
             Right sidebar start
         ***********************************-->
@@ -595,6 +595,7 @@
         <!--**********************************
             Right sidebar end
         ***********************************-->
+        <!--endRemoveIf(production)-->
     </div>
     <!--**********************************
         Main wrapper end
@@ -611,8 +612,10 @@
     <script src="./vendor/quixnav/quixnav.min.js"></script>
     <script src="./js/quixnav-init.js"></script>
     <script src="./js/custom.min.js"></script>
+    <!--removeIf(production)-->
     <!-- Demo scripts -->
     <script src="./js/styleSwitcher.js"></script>
+    <!--endRemoveIf(production)-->
     <script src="./vendor/highlightjs/highlight.pack.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 

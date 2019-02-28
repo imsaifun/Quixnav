@@ -912,7 +912,11 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     [data-sidebar-style="mini"][data-layout="horizontal"] .metismenu > li:hover a .nav-text {
       display: none; }
   [data-header-position="fixed"][data-layout="horizontal"][data-sidebar-position="fixed"][data-sidebar-style="compact"] .content-body {
-    padding-top: 8.75rem; } }
+    padding-top: 8.75rem; }
+  [data-sidebar-position="fixed"][data-layout="horizontal"] .quixnav.fixed {
+    position: fixed;
+    left: 0;
+    top: 0; } }
 
 @media (min-width: 767px) {
   [data-sidebar-style="compact"] .quixnav .metismenu li {
@@ -3783,6 +3787,10 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 [data-layout="vertical"][data-container="boxed"][data-sidebar-position="fixed"][data-header-position="static"][data-sidebar-style="overlay"] .menu-toggle .quixnav {
   position: absolute; }
 
+[data-container="boxed"][data-sidebar-position="fixed"][data-layout="horizontal"] .quixnav.fixed {
+  left: auto;
+  max-width: 1199px; }
+
 @media (min-width: 992px) {
   [data-container="wide-boxed"] #main-wrapper {
     width: 90%;
@@ -3827,11 +3835,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 [data-sidebar-style="mini"][data-layout="horizontal"][data-container="wide-boxed"] .header {
   width: 100%; }
 
-[data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"] .metismenu.fixed {
+[data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"] .quixnav.fixed {
   width: 90%;
-  left: 5%; }
+  left: 5%;
+  transition: none; }
 
-[data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"][direction="rtl"] .metismenu.fixed {
+[data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"][direction="rtl"] .quixnav.fixed {
   right: 5%; }
 
 [data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"][data-header-position="fixed"] .quixnav {
