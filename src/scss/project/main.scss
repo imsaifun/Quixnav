@@ -111,7 +111,7 @@ Table of Contents
 @import "./abstracts/abstracts";
 
 //bootstrap library scss files
-@import "./../vendor/bootstrap/scss/bootstrap.scss";
+@import "./../../vendor/bootstrap/scss/bootstrap.scss";
 
 
 
@@ -119,13 +119,6 @@ Table of Contents
 // Global
 ////////////////////
 @import "./base/base";
-
-
-
-////////////////////
-// Layout
-////////////////////
-@import "./layout/layout";
 
 @import "./preloader";
 
@@ -152,9 +145,3 @@ Table of Contents
 // Version Color
 ////////////////////
 @import "./layout/version-dark/main";
-
-
-////////////////////
-// theme
-////////////////////
-@import "./layout/theme/theme";
