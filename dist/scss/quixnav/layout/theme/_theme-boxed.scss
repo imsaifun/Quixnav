@@ -84,3 +84,10 @@
         }
     }
 }
+
+[data-container="boxed"][data-sidebar-position="fixed"][data-layout="horizontal"] {
+    .quixnav.fixed {
+        left: auto;
+        max-width: 1199px;
+    }
+}

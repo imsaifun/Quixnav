@@ -144,7 +144,7 @@ a {
 
 #main-wrapper {
   opacity: 0;
-  transition: all 0.25s ease-in;
+  transition: all 0.2s ease;
   overflow: hidden;
   position: relative; }
   #main-wrapper.show {
@@ -236,7 +236,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .content-body {
   margin-left: 17.1875rem;
   z-index: 0;
-  transition: all .4s ease-in-out; }
+  transition: all .2s ease; }
   @media only screen and (min-width: 1200px) and (max-width: 1350px) {
     .content-body {
       margin-left: 14.375rem; } }
@@ -251,7 +251,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   z-index: 99;
   background-color: #fff;
   box-shadow: 2px 3px 10px 0px rgba(119, 119, 119, 0.1);
-  transition: all .4s ease-in-out; }
+  transition: all .2s ease; }
   @media only screen and (min-width: 1200px) and (max-width: 1350px) {
     .quixnav {
       width: 14.375rem; } }
@@ -1323,7 +1323,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   left: 0;
   top: 0;
   background-color: #fff;
-  transition: all .4s ease-in-out;
+  transition: all .2s ease;
   z-index: 999; }
   .nav-header .logo-abbr {
     display: none; }
@@ -1425,7 +1425,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   z-index: 998;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   padding-left: 17.1875rem;
-  transition: all .4s ease-in-out; }
+  transition: all .2s ease; }
   .header .header-content {
     height: 100%;
     padding-left: 4.375rem;

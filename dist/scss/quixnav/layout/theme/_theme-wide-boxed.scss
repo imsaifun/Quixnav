@@ -106,17 +106,19 @@
 }
 
 [data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"] {
-    .metismenu.fixed {
+    .quixnav.fixed {
         width: 90%;
         left: 5%;
+        transition: none;
     }
 
     &[direction="rtl"] {
-        .metismenu.fixed {
+        .quixnav.fixed {
             right: 5%;
         }
     }
 }
+
 
 [data-layout="horizontal"][data-container="wide-boxed"][data-sidebar-position="fixed"][data-header-position="fixed"] {
     .quixnav {
