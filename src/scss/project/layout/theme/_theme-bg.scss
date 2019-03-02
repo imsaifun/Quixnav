@@ -102,9 +102,7 @@
                         }
 
                         @at-root [data-layout="horizontal"]#{&} {
-                            // &:not(:last-child) {
-                                border-color: lighten($color: $color, $amount: 10%);
-                            // }
+                            border-color: lighten($color: $color, $amount: 10%)
                         }
                     }
 

@@ -1,29 +1,16 @@
-//customize bootstrap
-@import './bs-custom';
 
 // Color Variable
+$primary: #1a33D5;
+$dark:          #333333;
 $secondary: #673BB7;
 $info: #00a2ff;
 $light: #aaa;
 $border: #EEEEEE;
-$ceriseRed: #F54372; 
-$light-2: #F9FAFC; 
-$scooter: #36B9D8; 
-$carnation: #F6514C;
-$apple: #449036;
-$cardinal: #CE2B23;
-$royal-blue:#3375E1;
-$blue_o: #4400eb;
-$dropdown-link-color: #212529;
+// $dropdown-link-color: #212529;
 $border-radius: .25rem;
-
-
-///////////////
-// Solid Color
-///////////////
+$muted:   #666666;
 $white: #fff;
 $black: #000;
-$charade: #23252F;
 
 /////////////////////////
 // Dark Version Color
@@ -33,24 +20,6 @@ $d-ctl: #37436a;
 $d-border: #111829;
 $d-bg: #111829;
 $dark-card: #151F37;
-$dark_bg_lighter: #1E2A4A;
-
-////////////////////////
-// Light Version Color
-////////////////////////
-$l-ctd: #464a53;
-$l-ctl: #abafb3;
-$l-border: rgba(120, 130, 140, 0.13);
-$l-bg: #F7FAFC;
-$heading: #333;
-
-///////////////////
-// Material Color
-///////////////////
-$dusty-gray: #999999;
-$gallery: #EEEEEE;
-$gray: #898989;
-$input-border-color: $border;
 
 
 //color for coller pallate

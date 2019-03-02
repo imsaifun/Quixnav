@@ -1,73 +1,13 @@
-@import "../../abstracts/variable";
-@import "../../abstracts/mixin";
-
-//global styles of sidebar
 
 ///////////////////////////
 // Nav Profile
 ///////////////////////////
-.nav-user {
-    text-align: center;
-    margin-bottom: 0.625rem;
-    padding: 1.25rem 0.9375rem 0.9375rem;
-    border-bottom: 1px solid $l-border;
-
-    img {
-        width: 3.125rem;
-        height: 3.125rem;
-    }
-    h5 {
-        margin-top: 0.625rem;
-        margin-bottom: 3px;
-        color: $l-ctd;
-    }
-    p {
-        margin-bottom: 0.5rem;
-    }
-    .nav-user-option {
-        position: relative;
-        .dropdown-menu {
-            left: 1.875rem !important;
-            top: 1.375rem !important;
-            background: $white;
-            border: 1px solid $l-border;
-            box-shadow: 0 0 1.5625rem $l-border;
-            padding: 0.625rem 0;
-            a {
-                color: $l-ctl;
-                line-height: 1.6875rem;
-                &:hover,
-                &:focus,
-                &.mm-active {
-                    background: lighten($l-bg, 5%);
-                }
-            }
-        }
-        .setting-option {
-            display: inline-block;
-            cursor: pointer;
-            i {
-                font-size: 0.625rem;
-                padding: 0 0.3125rem;
-            }
-        }
-        .notification-option {
-            display: inline-block;
-            cursor: pointer;
-            i {
-                font-size: 0.625rem;
-                padding: 0 0.3125rem;
-            }
-        }
-    }
-}
 
 .nav-label {
     padding: 0.8125rem 1.5625rem;
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.05rem;
-    color: $l-ctl;
 }
 
 .nav-badge {

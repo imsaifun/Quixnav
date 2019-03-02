@@ -170,63 +170,11 @@ li {
 .btn-primary, .badge-primary {
   background-color: #1a33D5; }
 
-/*
-0 - 600: Phone
-600 - 900: Tablet portrait
-900 - 1200: Tablet landscape
-1200 - 1800: Normal styles
-1800+ : Big Desktop
-1em = 16px
-The smaller device rules always should write below the bigger device rules
-Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
-*/
-.nav-user {
-  text-align: center;
-  margin-bottom: 0.625rem;
-  padding: 1.25rem 0.9375rem 0.9375rem;
-  border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
-  .nav-user img {
-    width: 3.125rem;
-    height: 3.125rem; }
-  .nav-user h5 {
-    margin-top: 0.625rem;
-    margin-bottom: 3px;
-    color: #464a53; }
-  .nav-user p {
-    margin-bottom: 0.5rem; }
-  .nav-user .nav-user-option {
-    position: relative; }
-    .nav-user .nav-user-option .dropdown-menu {
-      left: 1.875rem !important;
-      top: 1.375rem !important;
-      background: #fff;
-      border: 1px solid rgba(120, 130, 140, 0.13);
-      box-shadow: 0 0 1.5625rem rgba(120, 130, 140, 0.13);
-      padding: 0.625rem 0; }
-      .nav-user .nav-user-option .dropdown-menu a {
-        color: #abafb3;
-        line-height: 1.6875rem; }
-        .nav-user .nav-user-option .dropdown-menu a:hover, .nav-user .nav-user-option .dropdown-menu a:focus, .nav-user .nav-user-option .dropdown-menu a.mm-active {
-          background: white; }
-    .nav-user .nav-user-option .setting-option {
-      display: inline-block;
-      cursor: pointer; }
-      .nav-user .nav-user-option .setting-option i {
-        font-size: 0.625rem;
-        padding: 0 0.3125rem; }
-    .nav-user .nav-user-option .notification-option {
-      display: inline-block;
-      cursor: pointer; }
-      .nav-user .nav-user-option .notification-option i {
-        font-size: 0.625rem;
-        padding: 0 0.3125rem; }
-
 .nav-label {
   padding: 0.8125rem 1.5625rem;
   text-transform: uppercase;
   font-size: 0.75rem;
-  letter-spacing: 0.05rem;
-  color: #abafb3; }
+  letter-spacing: 0.05rem; }
 
 .nav-badge {
   position: absolute;
@@ -1561,7 +1509,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .header-right .notification_dropdown .dropdown-item:focus a, .header-right .notification_dropdown .dropdown-item:active a {
     color: #fff; }
   .header-right .notification_dropdown .dropdown-item a {
-    color: #212529; }
+    color: #333333; }
     .header-right .notification_dropdown .dropdown-item a:hover {
       text-decoration: none; }
   .header-right .dropdown-menu {
@@ -1575,12 +1523,10 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   padding-left: 17.1875rem;
   background-color: #fff; }
   .footer .copyright {
-    padding: 0.9375rem;
-    background: white; }
+    padding: 0.9375rem; }
     .footer .copyright p {
       text-align: center;
-      margin: 0;
-      color: #898989; }
+      margin: 0; }
     .footer .copyright a {
       color: #1a33D5; }
 
@@ -3281,16 +3227,6 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     background-color: #161f35; }
     [data-theme-version="dark"] .footer .copyright p {
       color: #fff; }
-
-[data-theme-version="dark"] #preloader {
-  background: #111829; }
-
-[data-theme-version="dark"] .loader__bar {
-  background: #1a33D5;
-  box-shadow: 1px 1px 0 #111829; }
-
-[data-theme-version="dark"] .loader__ball {
-  background: #1a33D5; }
 
 [data-nav-headerbg="color_2"] .nav-header {
   background-color: #30323F; }
