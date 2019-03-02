@@ -102,6 +102,15 @@ quixSettings.prototype.manageNavHeaderBg = function() {
         case "color_10": 
             body.attr("data-nav-headerbg", "color_10");
             break;
+        case "image_1": 
+            body.attr("data-nav-headerbg", "image_1");
+            break;
+        case "image_2": 
+            body.attr("data-nav-headerbg", "image_2");
+            break;
+        case "image_3": 
+            body.attr("data-nav-headerbg", "image_3");
+            break;
         default:
             body.attr("data-nav-headerbg", "color_1");
     }
@@ -138,6 +147,18 @@ quixSettings.prototype.manageHeaderBg = function() {
             break;
         case "color_10": 
             body.attr("data-headerbg", "color_10");
+            break;
+        case "transparent": 
+            body.attr("data-headerbg", "transparent");
+            break;
+        case "gradient_1": 
+            body.attr("data-headerbg", "gradient_1");
+            break;
+        case "gradient_2": 
+            body.attr("data-headerbg", "gradient_2");
+            break;
+        case "gradient_3": 
+            body.attr("data-headerbg", "gradient_3");
             break;
         default:
             body.attr("data-headerbg", "color_1");
@@ -207,6 +228,15 @@ quixSettings.prototype.manageSidebarBg = function() {
             break;
         case "color_10": 
             body.attr("data-sibebarbg", "color_10");
+            break;
+        case "image_1": 
+            body.attr("data-sibebarbg", "image_1");
+            break;
+        case "image_2": 
+            body.attr("data-sibebarbg", "image_2");
+            break;
+        case "image_3": 
+            body.attr("data-sibebarbg", "image_3");
             break;
         default:
             body.attr("data-sibebarbg", "color_1");
