@@ -20,10 +20,10 @@
     new quixSettings({
         version: "light", // "light" and "dark"
         layout: "vertical", // "vertical" and "horizontal"
-        navheaderBg: "color_1", // "color_1" to "color_10"
-        headerBg: "color_1", // "color_1" to "color_10"
+        navheaderBg: "image_1", // "color_1" to "color_10"
+        headerBg: "transparent", // "color_1" to "color_10"
         sidebarStyle: "icon-hover", // "full", "compact", "mini" and "overlay", "modern", "icon-hover"
-        sidebarBg: "color_1", // "color_1" to "color_10"
+        sidebarBg: "image_1", // "color_1" to "color_10"
         sidebarPosition: "static", // have two options, "static" and "fixed"
         headerPosition: "static", // have two options, "static" and "fixed"
         containerLayout: "wide",  // "boxed" and  "wide", "wide-boxed"
